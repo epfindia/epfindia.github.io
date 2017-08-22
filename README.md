@@ -18,5 +18,6 @@ Warning: These guidelines are unofficial and you have to visit your nearest offi
     3. SMS: EPFOHO UAN <ENG>  to 7738299899
 5. [PPO Query and Pension disbursement details](http://59.180.231.60:9091/prtest/PPO%20Query.jsp)
 6. [See your Jeevan pramaan patra](https://jeevanpramaan.gov.in/ppouser/login)
+7. [Merge multiple UANs](http://oeoea.epfoservices.com/UANDEDUP/)
 
 
