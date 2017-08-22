@@ -1,6 +1,6 @@
 ## Welcome to Unofficial EPF FAQs
 
-Warning: These guidelines are unofficial and you have to visit your nearest office to confirm corrent procedure and provisions of the Act and The Schemes.
+Warning: These guidelines are unofficial and you have to visit your nearest office to confirm procedure and provisions of the Act and The Schemes.
 
 1. [General](./general)
 2. [Pension](./pension)
