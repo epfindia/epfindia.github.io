@@ -1,0 +1,16 @@
+## Office
+
+[Mail](http://mail.govin)
+[MIS](http://59.180.231.60:9091/prtest/prehome.jsp)
+[E-court](http://164.100.94.185/epfo/login.php)
+[Aadhaar KYC](http://aadhaar.epfoservices.com:8080/EPFOWeb/)
+[HRM](http://hr.epfoservices.com/hrm/Login.aspx)
+[GEM](https://gem.gov.in/login)
+[Unified Portal](https://unifiedportal-epfo.epfindia.gov.in/fointerface/)
+[E-Samiksha](https://esamiksha.gov.in/epfo/)
+[Office circulars](http://www.epfindia.com/site_en/circulars.php)
+[Transfers](http://www.epfindia.com/site_en/app_tfr_post.php)
+[PPO Enquiry](http://59.180.231.60:9091/prtest/PPO%20Query.jsp)
+[Account Merge](http://oeoea.epfoservices.com/UANDEDUP/)
+[CAIU Login](http://cams.epfoservices.com/epfo/adminLogin)
+[Limbs](https://www.limbs.gov.in/start2.asp)
