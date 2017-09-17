@@ -23,7 +23,7 @@
  {
    "url": "http://103.194.45.139/prtest/Claims.jsp\" ",
    "text": "Dashboard Claims",
-   "type": ["AC"]
+   "type": ["AC","RC","CC"]
  },
  {
    "url": "http://103.194.45.139/prtest/prehome.jsp\" ",
