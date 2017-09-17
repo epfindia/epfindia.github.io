@@ -28,12 +28,12 @@
  {
    "url": "http://103.194.45.139/prtest/prehome.jsp\" ",
    "text": "MIS",
-   "type": ["APFC"]
+   "type": ["APFC","RPFC","COMP", "PENSION"]
  },
  {
    "url": "http://164.100.94.185/epfo/login.php\" ",
    "text": "E-court",
-   "type": ["APFC"]
+   "type": ["APFC", "COMP"]
  },
  {
    "url": "http://59.180.231.60:9091/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp\" ",
@@ -48,7 +48,7 @@
  {
    "url": "http://cams.epfoservices.com/epfo/adminLogin\" ",
    "text": "CAIU Login",
-   "type": ["APFC"]
+   "type": ["APFC","RPFC"]
  },
  {
    "url": "http://epfindia.com/site_docs/PDFs/dashboard/dash_key_parameter.html\" ",
@@ -63,12 +63,12 @@
  {
    "url": "http://gem.gov.in",
    "text": "GEM",
-   "type": ["APFC"]
+   "type": ["APFC","ADMIN"]
  },
  {
    "url": "http://hr.epfoservices.com/hrm",
    "text": "HRM Site",
-   "type": ["APFC"]
+   "type": ["APFC", "ADMIN"]
  },
  {
    "url": "http://hr.epfoservices.com/hrm/sghshome.aspx\" ",
@@ -78,7 +78,7 @@
  {
    "url": "http://iwu.epfoservices.com:8176/epfo",
    "text": "Compliance MIS",
-   "type": ["APFC"]
+   "type": ["APFC","RPFC"]
  },
  {
    "url": "http://jura.wi.mit.edu/cgi-bin/bioc/tools/compare.cgi\" ",
@@ -88,12 +88,12 @@
  {
    "url": "http://mail.gov.in\" ",
    "text": "Mail",
-   "type": ["APFC"]
+   "type": ["APFC","RPFC", "ACC"]
  },
  {
    "url": "http://www.epfigms.gov.in/epfoffice",
    "text": "EPFIGMS",
-   "type": ["APFC"]
+   "type": ["APFC", "PGHS"]
  },
  {
    "url": "http://www.epfindia.com/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf\" ",
@@ -108,12 +108,12 @@
  {
    "url": "http://www.epfindia.com/site_en/app_tfr_post.php\" ",
    "text": "Transfers",
-   "type": ["APFC"]
+   "type": ["APFC", "RPFC", "ACC"]
  },
  {
    "url": "http://www.epfindia.com/site_en/circulars.php\" ",
    "text": "Office circulars",
-   "type": ["APFC"]
+   "type": ["APFC","RPFC","ACC"]
  },
  {
    "url": "https://jeevanpramaan.gov.in",
@@ -143,7 +143,7 @@
  {
    "url": "https://shramsuvidha.gov.in/home\" ",
    "text": "Shram Suvidha Portal",
-   "type": ["APFC"]
+   "type": ["APFC","RPFC","ACC"]
  },
  {
    "url": "https://unifiedportal-emp.epfindia.gov.in/epfo",
@@ -163,7 +163,7 @@
  {
    "url": "https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/dashboard\" ",
    "text": "Dashboard KYC",
-   "type": ["APFC"]
+   "type": ["APFC","RPFC", "ACC"]
  },
  {
    "url": "https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome\" ",
@@ -178,7 +178,7 @@
  {
    "url": "https://www.limbs.gov.in",
    "text": "LIMBS",
-   "type": ["APFC"]
+   "type": ["APFC", "LEGAL"]
  }
 ]
 }
