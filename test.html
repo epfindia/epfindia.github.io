@@ -19,8 +19,10 @@
 
 <script>
 angular.module('myApp', []).controller('namesCtrl', function($scope) {
+    $scope.names = [];
     $http.get('content.json').success(function(data) {
       $scope.names = data;
+      console.log(data);
     });
 });
 </script>
