@@ -1,30 +1,30 @@
 {
 	"data": [{
-		"type": "A",
+		"type": ["RC"],
 		"name": "Jani"
 	}, {
-		"type": "A",
+		"type": ["CC"],
 		"name": "Carl"
 	}, {
-		"type": "A",
+		"type": ["AC"],
 		"name": "Margareth"
 	}, {
-		"type": "A",
+		"type": ["AC", "RC"],
 		"name": "Hege"
 	}, {
-		"type": "C",
+		"type": ["RC"],
 		"name": "Joe"
 	}, {
-		"type": "A",
+		"type": ["CC"],
 		"name": "Gustav"
 	}, {
-		"type": "B",
+		"type": ["CC", "RC"],
 		"name": "Birgit"
 	}, {
-		"type": "A",
+		"type": ["AC", "RC"],
 		"name": "Mary"
 	}, {
-		"type": "B",
+		"type": ["AC"],
 		"name": "Kai"
 	}]
 }
