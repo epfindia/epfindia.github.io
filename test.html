@@ -20,10 +20,16 @@
 <script>
 angular.module('myApp', []).controller('namesCtrl', function($scope, $http) {
     $scope.names = [];
-    $http.get('content.json').success(function(data) {
+    $http({
+      method: 'GET',
+      url: 'content.json'
+   }).then(function (success){
       $scope.names = data;
       console.log(data);
-    });
+   },function (error){
+      console.log(error)
+
+   });
 });
 </script>
 
