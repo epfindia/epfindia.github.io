@@ -3,182 +3,182 @@
  {
    "url": "http://103.194.45.139/INOPHelpDesk",
    "text": "Inoperative Helpdesk",
-   "type": "AC"
+   "type": ["AC","CC"]
  },
  {
    "url": "http://103.194.45.139/PPOquery",
    "text": "PPO Query",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://103.194.45.139/TRRN_SEARCH",
    "text": "TRRN SEARCH",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://103.194.45.139/UANDEDUP",
    "text": "PF account Merge",
-   "type": "AC"
+   "type": ["AC","RC"]
  },
  {
    "url": "http://103.194.45.139/prtest/Claims.jsp\" ",
    "text": "Dashboard Claims",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://103.194.45.139/prtest/prehome.jsp\" ",
    "text": "MIS",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://164.100.94.185/epfo/login.php\" ",
    "text": "E-court",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://59.180.231.60:9091/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp\" ",
    "text": "Jeevan Pramaan Enquiry",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://aadhaar.epfoservices.com:8080/EPFOWeb",
    "text": "Aadhaar Seeding",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://cams.epfoservices.com/epfo/adminLogin\" ",
    "text": "CAIU Login",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://epfindia.com/site_docs/PDFs/dashboard/dash_key_parameter.html\" ",
    "text": "Dashboard Key Parameters",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://epfindia.com/site_en/Principal_Employer.php\" ",
    "text": "Principal Employer",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://gem.gov.in",
    "text": "GEM",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://hr.epfoservices.com/hrm",
    "text": "HRM Site",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://hr.epfoservices.com/hrm/sghshome.aspx\" ",
    "text": "SGHS",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://iwu.epfoservices.com:8176/epfo",
    "text": "Compliance MIS",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://jura.wi.mit.edu/cgi-bin/bioc/tools/compare.cgi\" ",
    "text": "List comparison",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://mail.gov.in\" ",
    "text": "Mail",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://www.epfigms.gov.in/epfoffice",
    "text": "EPFIGMS",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://www.epfindia.com/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf\" ",
    "text": "Form 19,10C, 31",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://www.epfindia.com/site_docs/PDFs/Circulars/Y2017-2018/Manual_CCF_DeathCase_9536.pdf\" ",
    "text": "Form 20, 10D, 5IF",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://www.epfindia.com/site_en/app_tfr_post.php\" ",
    "text": "Transfers",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "http://www.epfindia.com/site_en/circulars.php\" ",
    "text": "Office circulars",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://jeevanpramaan.gov.in",
    "text": "Jeevan Pramaan Website",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://passbook.epfindia.gov.in/MemClaimStatusUAN",
    "text": "Claim Status",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp\" ",
    "text": "Passbook",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://play.google.com/store/apps/details?id=com.phonegap.helloepfo&hl=en\" ",
    "text": "M-epf App",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://pmrpy.gov.in",
    "text": "PMRPY",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://shramsuvidha.gov.in/home\" ",
    "text": "Shram Suvidha Portal",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://unifiedportal-emp.epfindia.gov.in/epfo",
    "text": "Unified portal (Establishment)",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://unifiedportal-emp.epfindia.gov.in/epfo/public/olre/registerOwner\" ",
    "text": "Estt. Registration",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://unifiedportal-epfo.epfindia.gov.in/fointerface",
    "text": "Unified Portal",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/dashboard\" ",
    "text": "Dashboard KYC",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome\" ",
    "text": "Establishment Search",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://unifiedportal-mem.epfindia.gov.in/memberinterface",
    "text": "Unified Portal (Member Interface)",
-   "type": "AC"
+   "type": ["AC"]
  },
  {
    "url": "https://www.limbs.gov.in",
    "text": "LIMBS",
-   "type": "AC"
+   "type": ["AC"]
  }
 ]
 }
