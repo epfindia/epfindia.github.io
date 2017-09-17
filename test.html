@@ -13,22 +13,17 @@
 <p>Type a letter in the input field:</p>
 
 <p><input type="text" ng-model="test"></p>
-<p><input type="radio" ng-model="test" value="">ALL<br/>
-  <input type="radio" ng-model="test" value="CC">ACC<br/>
-  <input type="radio" ng-model="test" value="RC">RC <br/>
-  <input type="radio" ng-model="test" value="AC">AC
+<p class="btn-group">
+  <input type="radio" ng-model="test" value="" class="btn btn-primary">ALL<br/>
+  <input type="radio" ng-model="test" value="CC" class="btn btn-primary">ACC<br/>
+  <input type="radio" ng-model="test" value="RC" class="btn btn-primary">RC <br/>
+  <input type="radio" ng-model="test" value="AC" class="btn btn-primary">AC
 </p>
-<div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-secondary active">
-    <input type="radio" ng-model="test" name="All" value="" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-  </label>
-  <label class="btn btn-secondary">
-    <input type="radio" ng-model="test" value="RC" name="options" id="option2" autocomplete="off"> RC
-  </label>
-  <label class="btn btn-secondary">
-    <input type="radio" ng-model="test" value="AC" name="options" id="option3" autocomplete="off"> AC
-  </label>
-</div>
+<div class="btn-group">
+  <button type="button" ng-model="test" value="" class="btn btn-primary">Apple</button>
+  <button type="button" ng-model="test" value="AC" class="btn btn-primary">Samsung</button>
+  <button type="button" ng-model="test" value="RC" class="btn btn-primary">Sony</button>
+</div> 
 
 <div class="list-group col-md-4">
   <a ng-repeat="x in names | filter:test" href="{{x.url}}" target="_blank" class="list-group-item">{{x.text}}
