@@ -19,17 +19,9 @@
 
 <script>
 angular.module('myApp', []).controller('namesCtrl', function($scope) {
-    $scope.names = [
-         { type: 'A', name: 'Jani'},
-         { type: 'A', name: 'Carl'},
-         { type: 'A', name: 'Margareth'},
-         { type: 'A', name: 'Hege'},
-         { type: 'C', name: 'Joe'},
-         { type: 'A', name: 'Gustav'},
-         { type: 'B', name: 'Birgit'},
-         { type: 'A', name: 'Mary'},
-         { type: 'B', name: 'Kai'}
-    ];
+    $http.get('content.json').success(function(data) {
+      $scope.names = data;
+    });
 });
 </script>
 
