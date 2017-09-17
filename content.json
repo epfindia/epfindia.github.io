@@ -1,4 +1,4 @@
-[
+{data:[
          { type: 'A', name: 'Jani'},
          { type: 'A', name: 'Carl'},
          { type: 'A', name: 'Margareth'},
@@ -9,3 +9,4 @@
          { type: 'A', name: 'Mary'},
          { type: 'B', name: 'Kai'}
     ]
+}
