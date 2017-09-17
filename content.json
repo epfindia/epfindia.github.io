@@ -8,7 +8,7 @@
  {
    "url": "http://103.194.45.139/PPOquery",
    "text": "PPO Query",
-   "type": ["APFC"]
+   "type": ["APFC", "PENSION"]
  },
  {
    "url": "http://103.194.45.139/TRRN_SEARCH",
@@ -38,7 +38,7 @@
  {
    "url": "http://59.180.231.60:9091/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp\" ",
    "text": "Jeevan Pramaan Enquiry",
-   "type": ["APFC"]
+   "type": ["APFC", "PENSION"]
  },
  {
    "url": "http://aadhaar.epfoservices.com:8080/EPFOWeb",
@@ -118,7 +118,7 @@
  {
    "url": "https://jeevanpramaan.gov.in",
    "text": "Jeevan Pramaan Website",
-   "type": ["APFC"]
+   "type": ["APFC", "PENSION"]
  },
  {
    "url": "https://passbook.epfindia.gov.in/MemClaimStatusUAN",
