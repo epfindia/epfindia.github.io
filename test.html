@@ -24,7 +24,7 @@ angular.module('myApp', []).controller('namesCtrl', function($scope, $http) {
       method: 'GET',
       url: 'content.json'
    }).then(function (success){
-      $scope.names = data;
+      $scope.names = data.data;
       console.log(data);
    },function (error){
       console.log(error)
