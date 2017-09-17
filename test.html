@@ -41,19 +41,18 @@
 <script>
   angular.module('myApp', ['ngCookies']);
   app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http',
-                       function($scope,$cookies,$cookieStore, $http) {
-    $scope.names = [];
-    $http({
-      method: 'GET',
-      url: 'content.json'
-   }).then(function (success){
-      $scope.names = success.data.data;
-      console.log(success);
-   },function (error){
-      console.log(error)
-
-   });
-});
+                               function($scope,$cookies,$cookieStore, $http) {
+                                 $scope.names = [];
+                                 $http({
+                                   method: 'GET',
+                                   url: 'content.json'
+                                 }).then(function (success){
+                                   $scope.names = success.data.data;
+                                   console.log(success);
+                                 },function (error){
+                                   console.log(error)
+                                 });
+                               }]);
 </script>
 
 <p>The list will only consists of names matching the filter.</p>
