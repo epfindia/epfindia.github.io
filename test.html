@@ -39,8 +39,17 @@
                                function($scope,$cookies,$cookieStore, $http) {
                                  $scope.names = [];
                                  $scope.test='';
+                                 var favoriteCookie = $cookies.get('cookieval');
+
+  if ( favoriteCookie ) {
+   $scope.test= favoriteCookie
+  } else {
+    $scope.test='';
+    $cookies.put('cookieval','');
+  }
                                  $scope.change = function(text) {
                                   $scope.test=text;
+                                  $cookies.put('cookieval',text);
                                   console.log(text);
                                  };
                                  $http({
