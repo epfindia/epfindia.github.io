@@ -70,6 +70,15 @@
       </div>
     </div>
   </div><script type="text/javascript">
+    $(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+        $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+  }); 
 //<![CDATA[
   var app = angular.module('myApp', ['ngCookies']);
   app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
