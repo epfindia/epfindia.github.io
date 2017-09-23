@@ -12,20 +12,7 @@
  <body>
 
 <div ng-app="myApp" ng-controller="namesCtrl">
-<div class="btn-group">
-  <button type="button" ng-click="change('')" class="btn btn-default">All</button>
-  <button type="button" ng-click="change('ACC')" class="btn btn-default">ACC</button>
-  <button type="button" ng-click="change('RPFC')" class="btn btn-default">RPFC</button>
-  <button type="button" ng-click="change('APFC')" class="btn btn-default">APFC</button>
-  <button type="button" ng-click="change('COMP')" class="btn btn-default">Compliance</button>
-  <button type="button" ng-click="change('PENSION')" class="btn btn-default">Pension</button>
-  <button type="button" ng-click="change('ADMIN')" class="btn btn-default">Admin</button>
-  <button type="button" ng-click="change('ACCOUNTS')" class="btn btn-default">Accounts</button>
-  <button type="button" ng-click="change('CASH')" class="btn btn-default">Cash</button>
-  <button type="button" ng-click="change('PGHS')" class="btn btn-default">PGHS</button>
-  <button type="button" ng-click="change('LEGAL')" class="btn btn-default">Legal</button>
-</div> 
-
+ <p><input type="text" ng-model="test"></p>
  <div class="table-responsive">
   <table class="table">
  <thead>
@@ -36,7 +23,7 @@
   </tr>
  </thead>
  <tbody>
-  <tr ng-repeat="x in names>
+  <tr ng-repeat="x in names | filter : test">
    <td scope="row">{{x.Office}}</td>
    <td scope="row">{{x.Name}}</td>
    <td scope="row">{{Contact}}</td>
