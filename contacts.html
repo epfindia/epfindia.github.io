@@ -45,7 +45,7 @@
                                    url: 'contacts.json'
                                  }).then(function (success){
                                    $scope.names = success.data;
-                                   console.log(success);
+                                   console.log($scope.names);
                                  },function (error){
                                    console.log(error)
                                  });
