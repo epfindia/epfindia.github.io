@@ -10,7 +10,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>  
  </head>
  <body>
-
+<div class="container">
+<h3>Contacts</h3> 
+<div class="row">
+<div class="col-md-8">
 <div ng-app="myApp" ng-controller="namesCtrl">
  <div class="panel panel-default">
   <!-- Default panel contents -->
@@ -34,9 +37,8 @@
  </tbody>
  </table>
 </div>
-
 </div>
-
+</div></div></div>
 <script>
   var app = angular.module('myApp', ['ngCookies']);
   app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
