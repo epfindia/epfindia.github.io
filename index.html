@@ -1,122 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Dashboard</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <style>
-    .list-group {
-      margin-bottom:0px;
-    }
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+ <title>Dashboard Filter</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>  
+ </head>
+ <body>
 
-<div class="container">
-  <h3>Dashboard</h3> 
-  <div class="row">
-    <div class="col-md-8">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Frequently Used <a style="color:#fff" target="_blank" href="./contacts"><span aria-hidden="true" class="pull-right glyphicon glyphicon-phone-alt"></span></a></div>
-            <div class="panel-body">
-                <div class="list-group col-md-6">
-                  <a href="http://103.194.45.139/prtest/prehome.jsp" target="_blank" class="list-group-item">MIS</a>
-                  <a href="https://unifiedportal-epfo.epfindia.gov.in/fointerface/" target="_blank" class="list-group-item">Unified Portal</a>
-                  <a href="http://cams.epfoservices.com/epfo/adminLogin" target="_blank" class="list-group-item">CAIU Login</a>
-                  <a href="http://164.100.94.185/epfo/login.php" target="_blank" class="list-group-item">E-court</a>
-                  <!--<a href="http://hr.epfoservices.com/hrm/sghshome.aspx" target="_blank" class="list-group-item">SGHS</a>--> 
-                  <a href="http://iwu.epfoservices.com:8176/epfo/" target="_blank" class="list-group-item">Compliance MIS</a>
-                  <a href="https://www.limbs.gov.in/" target="_blank" class="list-group-item">LIMBS</a>
-                  <a href="http://www.epfigms.gov.in/epfoffice/" target="_blank" class="list-group-item">EPFIGMS</a>
-                  <a href="https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome" target="_blank" class="list-group-item">Establishment Search</a>
-                </div>
-                
-                <div class="list-group col-md-6">
-                    <a href="http://gem.gov.in/" target="_blank" class="list-group-item">GEM</a>
-                    <a href="https://shramsuvidha.gov.in/home" target="_blank" class="list-group-item">Shram Suvidha Portal</a>
-                    <a href="https://pmrpy.gov.in/" target="_blank" class="list-group-item">PMRPY</a>
-                    <a href="http://aadhaar.epfoservices.com:8080/EPFOWeb/" target="_blank" class="list-group-item">Aadhaar Seeding</a>
-    
-                </div>
-                
-                <div class="list-group col-md-6">
-                  <a href="http://mail.gov.in" target="_blank" class="list-group-item">Mail</a>
-                  <a href="http://www.epfindia.com/site_en/circulars.php" target="_blank" class="list-group-item">Office circulars</a>
-                  <a href="http://www.epfindia.com/site_en/app_tfr_post.php" target="_blank" class="list-group-item">Transfers</a>
-                  <a href="http://hr.epfoservices.com/hrm/" target="_blank" class="list-group-item">HRM Site</a>
-                </div>
-                
+<div ng-app="myApp" ng-controller="namesCtrl">
+<div class="btn-group">
+  <button type="button" ng-click="change('')" class="btn btn-default">All</button>
+  <button type="button" ng-click="change('ACC')" class="btn btn-default">ACC</button>
+  <button type="button" ng-click="change('RPFC')" class="btn btn-default">RPFC</button>
+  <button type="button" ng-click="change('APFC')" class="btn btn-default">APFC</button>
+  <button type="button" ng-click="change('COMP')" class="btn btn-default">Compliance</button>
+  <button type="button" ng-click="change('PENSION')" class="btn btn-default">Pension</button>
+  <button type="button" ng-click="change('ADMIN')" class="btn btn-default">Admin</button>
+  <button type="button" ng-click="change('ACCOUNTS')" class="btn btn-default">Accounts</button>
+  <button type="button" ng-click="change('CASH')" class="btn btn-default">Cash</button>
+  <button type="button" ng-click="change('PGHS')" class="btn btn-default">PGHS</button>
+  <button type="button" ng-click="change('LEGAL')" class="btn btn-default">Legal</button>
+</div> 
 
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="panel panel-success">
-          <div class="panel-heading">Dashboards</div>
-          <div class="panel-body">
-                <div class="list-group">
-                    <a href="http://epfindia.com/site_docs/PDFs/dashboard/dash_key_parameter.html" target="_blank" class="list-group-item">Dashboard Key Parameters</a>
-                    <a href="https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/dashboard" target="_blank" class="list-group-item">Dashboard KYC</a>
-                    <a href="http://103.194.45.139/prtest/Claims.jsp" target="_blank" class="list-group-item">Dashboard Claims</a>
-        <!--<a href="http://jura.wi.mit.edu/cgi-bin/bioc/tools/compare.cgi" target="_blank" class="list-group-item">List comparison</a>-->
-                </div>
-          </div>
-        </div>
-    </div>
-        <div class="col-md-4">
-        <div class="panel panel-warning">
-          <div class="panel-heading">Forms</div>
-          <div class="panel-body">
-                <div class="list-group">
-                    <a href="http://www.epfindia.com/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf" target="_blank" class="list-group-item">Form 19,10C, 31</a>
-      <a href="http://www.epfindia.com/site_docs/PDFs/Circulars/Y2017-2018/Manual_CCF_DeathCase_9536.pdf" target="_blank" class="list-group-item">Form 20, 10D, 5IF</a>
-      
-                </div>
-          </div>
-        </div>
-    </div>
-</div>
- <div class="row">
-        <div class="panel panel-info">
-            <div class="panel-heading">Establishment Employee & Pensioner</div>
-            <div class="panel-body">
-                <div class="list-group col-md-4">
-                    <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" class="list-group-item">Unified Portal (Member Interface)</a>
-                    <a href="https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp" target="_blank" class="list-group-item">Passbook</a>
-                    <a href="https://passbook.epfindia.gov.in/MemClaimStatusUAN/" target="_blank" class="list-group-item">Claim Status</a>
-                    <a href="http://103.194.45.139/UANDEDUP/" target="_blank" class="list-group-item">PF account Merge</a>
-                    <a href="http://103.194.45.139/INOPHelpDesk/" target="_blank" class="list-group-item">Inoperative Helpdesk</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.phonegap.helloepfo&hl=en" target="_blank" class="list-group-item">M-epf App</a>
-                    <a href="tel:011-22901406" target="_blank" class="list-group-item">Miss Call 011-22901406 for fund detail</a>
-                </div>
-                
-                <div class="list-group col-md-4">
-                    <a href="https://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank" class="list-group-item">Unified portal (Establishment)</a>
-                    <a href="http://epfindia.com/site_en/Principal_Employer.php" target="_blank" class="list-group-item">Principal Employer</a>
-                    
-                    <a href="http://103.194.45.139/TRRN_SEARCH/" target="_blank" class="list-group-item">TRRN SEARCH</a>
-                    <a href="https://unifiedportal-emp.epfindia.gov.in/epfo/public/olre/registerOwner" target="_blank" class="list-group-item">Estt. Registration</a> 
-                </div>
-                
-                <div class="list-group col-md-4">
-                  <a href="http://103.194.45.139/PPOquery/" target="_blank" class="list-group-item">PPO Query</a>
-        <a href="http://59.180.231.60:9091/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp" target="_blank" class="list-group-item">Jeevan Pramaan Enquiry</a>
-        <a href="https://jeevanpramaan.gov.in/" target="_blank" class="list-group-item">Jeevan Pramaan Website</a>
-                </div>
-                
-
-            </div>
-    </div>
-
-</div>
-    <a href="./comments" target="_blank" class="list-group-item">Comments and Suggestions</a>
-  
-                         
+<div class="list-group col-md-4">
+  <a ng-repeat="x in names | filter:{'type':  test}" href="{{x.url}}" target="_blank" class="list-group-item">{{x.text}}
+  </a>
 </div>
 
+</div>
+
+<script>
+  var app = angular.module('myApp', ['ngCookies']);
+  app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http',
+                               function($scope,$cookies,$cookieStore, $http) {
+                                 $scope.names = [];
+                                 $scope.test='';
+                                 var favoriteCookie = $cookies.get('cookieval');
+
+  if ( favoriteCookie ) {
+   $scope.test= favoriteCookie
+  } else {
+    $scope.test='';
+    $cookies.put('cookieval','');
+  }
+                                 $scope.change = function(text) {
+                                  $scope.test=text;
+                                  $cookies.put('cookieval',text);
+                                  console.log(text);
+                                 };
+                                 $http({
+                                   method: 'GET',
+                                   url: 'content.json'
+                                 }).then(function (success){
+                                   $scope.names = success.data.data;
+                                   console.log(success);
+                                 },function (error){
+                                   console.log(error)
+                                 });
+                               }]);
+</script>
 </body>
 </html>
-
