@@ -28,7 +28,7 @@
 
 <div ng-repeat="rows in data" class="row">
 	<div ng-repeat="x in rows" class="{{x.width}}" ng-if="(x.links| filter:{'tags':  test}).length!=0">
-		<div class="panel {{x.class}}" ng-class="{'vis-hidden': (x.links| filter:{'tags':  test}).length==0}">
+		<div class="panel {{x.class}}"> <!--ng-class="{'vis-hidden': (x.links| filter:{'tags':  test}).length==0}">-->
 			<div class="panel-heading">{{x.title}}</div>
 			<div class="panel-body">
 				<div class="list-group">
