@@ -8,7 +8,7 @@
          {
             "link":"http://103.194.45.139/prtest/prehome.jsp",
             "text":"MIS",
-            "tags":["APFC","RPFC", "COMP", "PENSION"]
+            "tags":["APFC","RPFC", "COMP"]
          },
          {
             "link":"https://unifiedportal-epfo.epfindia.gov.in/fointerface/",
@@ -146,22 +146,22 @@
          {
             "link":"https://unifiedportal-emp.epfindia.gov.in/epfo/",
             "text":"Unified portal (Establishment)",
-            "tags":["APFC","RPFC"]
+            "tags":["APFC","RPFC", "EMPLOYER"]
          },
          {
             "link":"http://epfindia.com/site_en/Principal_Employer.php",
             "text":"Principal Employer",
-            "tags":["APFC","RPFC"]
+            "tags":["APFC","RPFC", "EMPLOYER"]
          },
          {
             "link":"http://103.194.45.139/TRRN_SEARCH/",
             "text":"TRRN SEARCH",
-            "tags":["APFC","RPFC"]
+            "tags":["APFC","RPFC", "EMPLOYER"]
          },
          {
             "link":"https://unifiedportal-emp.epfindia.gov.in/epfo/public/olre/registerOwner",
             "text":"Estt. Registration",
-            "tags":["APFC","RPFC"]
+            "tags":["APFC","RPFC", "EMPLOYER"]
          }
       ]
    },
@@ -173,37 +173,37 @@
          {
             "link":"https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
             "text":"Unified Portal (Member Interface)",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          },
          {
             "link":"https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp",
             "text":"Passbook",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          },
          {
             "link":"https://passbook.epfindia.gov.in/MemClaimStatusUAN/",
             "text":"Claim Status",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          },
          {
             "link":"http://103.194.45.139/UANDEDUP/",
             "text":"PF account Merge",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          },
          {
             "link":"http://103.194.45.139/INOPHelpDesk/",
             "text":"Inoperative Helpdesk",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          },
          {
             "link":"https://play.google.com/store/apps/details?id=com.phonegap.helloepfo&hl=en",
             "text":"M-epf App",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          },
          {
             "link":"tel:011-22901406",
             "text":"Miss Call 011-22901406 for fund detail",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          }
       ]
    },
