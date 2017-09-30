@@ -56,7 +56,7 @@
             </a>
             
 
-            <a href="./office" class="btn btn-sq-lg btn-warning">
+            <a href="#" ng-click="change('')" class="btn btn-sq-lg btn-warning">
               <i class="fa fa-user fa-5x"></i><br/>
               Office
             </a>
@@ -70,7 +70,7 @@
 	
 		<div ng-repeat="rows in data" class="row">
 	<div ng-repeat="x in rows" class="{{x.width}}">
-		<div class="panel {{x.class}}" ng-show="(x.links| filter:{'tags':  test}).length!=0">
+		<div class="panel {{x.class}}" ng-if="(x.links| filter:{'tags':  test}).length!=0">
 			<div class="panel-heading">{{x.title}}</div>
 			<div class="panel-body">
 				<div class="list-group">
