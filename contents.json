@@ -149,6 +149,11 @@
             "tags":["APFC","RPFC", "EMPLOYER"]
          },
          {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome",
+            "text":"Establishment Search",
+            "tags":["APFC", "EMPLOYER"]
+         },
+         {
             "link":"http://epfindia.com/site_en/Principal_Employer.php",
             "text":"Principal Employer",
             "tags":["APFC","RPFC", "EMPLOYER"]
@@ -173,6 +178,11 @@
          {
             "link":"https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
             "text":"Unified Portal (Member Interface)",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome",
+            "text":"Establishment Search",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
