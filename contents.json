@@ -226,7 +226,11 @@
             "link":"https://jeevanpramaan.gov.in/",
             "text":"Jeevan Pramaan Website",
             "tags":["APFC","PENSION"]
-         }
+         },
+         {
+            "link":"http://103.194.45.139/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp",
+            "text":"Know Your DLC status",
+            "tags":["APFC","PENSION"]
       ]
    }
    ]
