@@ -23,11 +23,11 @@
 
           <div class="panel panel-default">
             <div class="panel-heading">
-              <input type="text" style="width:100%; padding:4px;" placeholder="search" ng-model="test" />
+              <input type="text" style="width:100%; padding:4px;" placeholder="Search by Office" ng-model="test" />
             </div>
           </div>
 
-	  <div class="panel panel-success" ng-repeat="x in offices | filter : test">
+	  <div class="panel panel-success" ng-repeat="x in offices | | filter:{'office':  test}">
 			<div class="panel-heading">{{x.office}}</div>
 			<div class="panel-body" style="padding-bottom:0px;">
 				
