@@ -28,23 +28,29 @@
             </div>
           </div>
 
-	  <div class="panel panel-success" ng-repeat="x in offices | filter:test">
-			<div class="panel-heading">{{x.office}}</div>
-			<div class="panel-body" style="padding-bottom:0px;">
+	  <div class="panel panel-success">
+			<div class="panel-heading">Result</div>
+			<div class="panel-body">
 				
 	<div class="table-responsive">
             <table class="table table-condensed table-hover table-bordered table-striped">
               <thead>
                 <tr>
-                <th class="col-md-6" >Name</th>
-		<th class="col-md-3">Phone</th>
-		<th class="col-md-3">-</th>
+                <th class="col-md-4" >Name</th>
+		<th class="col-md-3">Office</th>
+		<th class="col-md-3">STD</th>
+		<th class="col-md-3">Contact</th>
+		<th class="col-md-3">Other</th>
                 </tr>
               </thead>
 
               <tbody>
-                <tr ng-repeat="y in x.officials">
-                    <td scope="row" ng-repeat="z in y">{{z}}</td>
+                <tr ng-repeat="x in offices | filter:test">
+                    <td scope="row">{{x.Name}}</td>
+		    <td scope="row">{{x.Office}}</td>
+		    <td scope="row">{{x.STD}}</td>
+		    <td scope="row">{{x.Contact}}</td>
+		    <td scope="row">{{x.Other}}</td>
                   </tr>
               </tbody>
             </table>
