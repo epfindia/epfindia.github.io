@@ -19,13 +19,13 @@
 </head>
 <body>
 <div class="container" ng-app="myApp" ng-controller="namesCtrl">
-	<div class="btn-group">
-			<button type="button" ng-click="change('PENSION')" class="btn btn-default"><i class="fa fa-user"> Pensioner</i></button>
-			<button type="button" ng-click="change('EMPLOYEE')" class="btn btn-default"><i class="fa fa-user"> Employee</i></button>
-			<button type="button" ng-click="change('EMPLOYER')" class="btn btn-default"><i class="fa fa-user"> Employer</i></button>
-			<button type="button" ng-click="change('')" class="btn btn-default"><i class="fa fa-user"> Office</i></button>
+	<!--<div class="btn-group">-->
+			<button type="button" ng-click="change('PENSION')" class="btn btn-default">Pensioner</button>
+			<button type="button" ng-click="change('EMPLOYEE')" class="btn btn-default">Employee</button>
+			<button type="button" ng-click="change('EMPLOYER')" class="btn btn-default">Employer</button>
+			<button type="button" ng-click="change('')" class="btn btn-default">Office</button>
 			<a href="./contacts" class="btn btn-sq-lg btn-default"><i class="fa fa-phone"></i></a>
-	</div>
+	<!--</div>-->
 <h3>Dashboard</h3>
 <div ng-repeat="rows in data" class="row">
 	<div ng-repeat="x in rows" class="{{x.width}}" ng-if="(x.links| filter:{'tags':  test}).length!=0">
