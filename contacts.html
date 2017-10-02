@@ -34,20 +34,20 @@
               <thead>
                 <tr>
                 <th class="col-md-4" >Name</th>
-		<th class="col-md-2">Office</th>
-		<th class="col-md-2">STD</th>
-		<th class="col-md-2">Contact</th>
-		<th class="col-md-2">Other</th>
+		<th style="max-width:20%" class="col-md-2">Office</th>
+		<th style="max-width:20%" class="col-md-2">STD</th>
+		<th style="max-width:20%" class="col-md-2">Contact</th>
+		<th style="max-width:20%" class="col-md-2">Other</th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr ng-repeat="x in offices | filter:test">
-                    <td class="col-md-4">{{x.Name}}</td>
-		    <td class="col-md-2">{{x.office}}</td>
-		    <td class="col-md-2">{{x.STD}}</td>
-		    <td class="col-md-2">{{x.Contact}}</td>
-		    <td class="col-md-2">{{x.Other}}</td>
+                    <td>{{x.Name}}</td>
+		    <td>{{x.office}}</td>
+		    <td>{{x.STD}}</td>
+		    <td>{{x.Contact}}</td>
+		    <td>{{x.Other}}</td>
                   </tr>
               </tbody>
             </table>
