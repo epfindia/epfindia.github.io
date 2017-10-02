@@ -67,14 +67,12 @@
                                 $scope.change = function(text) {
                                   $scope.test=text;
                                   $cookies.put('cookieval',text);
-                                  console.log(text);
                                  };
                                  $http({
                                    method: 'GET',
                                    url: 'contents.json'
                                  }).then(function (success){
                                    $scope.data = success.data;
-                                   console.log($scope.links);
                                  },function (error){
                                    console.log(error)
                                  });
