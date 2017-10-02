@@ -57,13 +57,12 @@
   var app = angular.module('myApp', ['ngCookies']);
   app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
                                  $scope.data = [];
-                                 $scope.test='PENSION';
                                  var favoriteCookie = $cookies.get('cookieval');
   				if ( favoriteCookie ) {
    					$scope.test= favoriteCookie
   				} else {
-    				$scope.test='PENSION';
-    				$cookies.put('cookieval','');
+    					$scope.test='';
+    					$cookies.put('cookieval','');
   				}
                                 $scope.change = function(text) {
                                   $scope.test=text;
