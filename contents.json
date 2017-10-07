@@ -192,7 +192,12 @@
          },
          {
             "link":"https://passbook.epfindia.gov.in/MemClaimStatusUAN/",
-            "text":"Claim Status",
+            "text":"Claim Status(UAN)",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"http://epfoservices.in/homepage_claim_status_new.php",
+            "text":"Claim Status(Member Id)",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
