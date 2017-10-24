@@ -116,6 +116,11 @@
             "link":"http://103.194.45.139/prtest/Claims.jsp",
             "text":"Dashboard Claims",
             "tags":["APFC","RPFC","ACC","ACCOUNTS"]
+         },
+         {
+            "link":"https://iwu.epfindia.gov.in/eKYC/",
+            "text":"E-KYC Portal",
+            "tags":["APFC","RPFC","ACC"]
          }
       ]
    },
@@ -218,6 +223,16 @@
          {
             "link":"tel:011-22901406",
             "text":"Miss Call 011-22901406 for fund detail",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://iwu.epfindia.gov.in/eKYC/trackUan",
+            "text":"Track E-KYC",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://iwu.epfindia.gov.in/eKYC/LinkUanAadhaar",
+            "text":"Link UAN with Aadhaar",
             "tags":["APFC", "EMPLOYEE"]
          }
       ]
