@@ -1,5 +1,7 @@
 [
-   [{
+   [
+   
+   {
       "title":"Frequently Used",
       "class":"panel-primary",
       "width":"col-md-8",
@@ -201,11 +203,6 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-            "link":"http://103.194.45.139/UANDEDUP/",
-            "text":"PF account Merge",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
             "link":"http://103.194.45.139/INOPHelpDesk/",
             "text":"Inoperative Helpdesk",
             "tags":["APFC", "EMPLOYEE"]
@@ -213,6 +210,11 @@
          {
             "link":"https://play.google.com/store/apps/details?id=com.phonegap.helloepfo&hl=en",
             "text":"M-epf App",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://play.google.com/store/apps/details?id=in.gov.umang.negd.g2c&hl=en",
+            "text":"UMANG ANDROID APP",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
