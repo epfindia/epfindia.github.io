@@ -1,6 +1,5 @@
 [
-   [
-   
+   [ 
    {
       "title":"Frequently Used",
       "class":"panel-primary",
@@ -205,11 +204,6 @@
          {
             "link":"http://www.epfindia.gov.in/site_en/KYCS.php",
             "text":"Claim Status(Member Id)",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
-            "link":"http://103.194.45.139/UANDEDUP/",
-            "text":"Merge two PF account/UANs",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
