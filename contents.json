@@ -187,6 +187,16 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
+            "link":"https://play.google.com/store/apps/details?id=com.phonegap.helloepfo&hl=en",
+            "text":"M-epf App",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"https://play.google.com/store/apps/details?id=in.gov.umang.negd.g2c&hl=en",
+            "text":"UMANG ANDROID APP",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
             "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome",
             "text":"Establishment Search",
             "tags":["APFC", "EMPLOYEE"]
@@ -209,16 +219,6 @@
          {
             "link":"http://103.194.45.139/INOPHelpDesk/",
             "text":"Inoperative Helpdesk",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
-            "link":"https://play.google.com/store/apps/details?id=com.phonegap.helloepfo&hl=en",
-            "text":"M-epf App",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
-            "link":"https://play.google.com/store/apps/details?id=in.gov.umang.negd.g2c&hl=en",
-            "text":"UMANG ANDROID APP",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
@@ -245,22 +245,17 @@
       "links":[
          {
             "link":"http://103.194.45.139/PPOquery/",
-            "text":"PPO Query",
+            "text":"PPO Query - Monthly Pension Detail",
             "tags":["APFC","PENSION"]
          },
          {
             "link":"http://103.194.45.139/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp",
-            "text":"Jeevan Pramaan Enquiry",
+            "text":"DLC status in EPFO DATABASE",
             "tags":["APFC","PENSION"]
          },
          {
             "link":"https://jeevanpramaan.gov.in/",
-            "text":"Jeevan Pramaan Website",
-            "tags":["APFC","PENSION"]
-         },
-         {
-            "link":"http://103.194.45.139/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp",
-            "text":"Know Your DLC status",
+            "text":"Jeevan Pramaan Website - DLC Status ",
             "tags":["APFC","PENSION"]
          }
       ]
