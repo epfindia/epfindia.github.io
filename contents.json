@@ -208,14 +208,11 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-<<<<<<< HEAD
-=======
             "link":"http://103.194.45.139/UANDEDUP/",
             "text":"Merge two PF account/UANs",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
->>>>>>> 5ba8ea36413835663bb8d5ad7cc42516257101de
             "link":"http://103.194.45.139/INOPHelpDesk/",
             "text":"Inoperative Helpdesk",
             "tags":["APFC", "EMPLOYEE"]
