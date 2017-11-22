@@ -27,6 +27,11 @@
             "tags":["APFC","RPFC","COMP"]
          },
          {
+            "link":"http://eproceedings.epfindia.gov.in ",
+            "text":"E-court New",
+            "tags":["APFC","RPFC","COMP"]
+         },
+         {
             "link":"http://hr.epfoservices.com/hrm/sghshome.aspx",
             "text":"SGHS",
             "tags":["APFC"]
@@ -256,6 +261,11 @@
          {
             "link":"https://jeevanpramaan.gov.in/",
             "text":"Jeevan Pramaan Website - DLC Status ",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"https://resident.uidai.gov.in/aadhaarverification",
+            "text":"Aadhaar Verification",
             "tags":["APFC","PENSION"]
          }
       ]
