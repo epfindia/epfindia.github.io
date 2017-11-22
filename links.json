@@ -226,6 +226,11 @@
             "link":"https://jeevanpramaan.gov.in/",
             "text":"Jeevan Pramaan Website",
             "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"https://resident.uidai.gov.in/aadhaarverification",
+            "text":"Aadhaar Verification",
+            "tags":["APFC","PENSION"]
          }
       ]
    }
