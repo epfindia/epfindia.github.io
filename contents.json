@@ -7,6 +7,11 @@
       "listw":"col-md-6",
       "links":[
          {
+            "link":"http://www.epfindia.gov.in",
+            "text":"Main Website",
+            "tags":["APFC","RPFC", "COMP"]
+         },
+         {
             "link":"http://103.194.45.139/prtest/prehome.jsp",
             "text":"MIS",
             "tags":["APFC","RPFC", "COMP"]
@@ -189,6 +194,11 @@
          {
             "link":"https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
             "text":"Unified Portal (Member Interface)",
+            "tags":["APFC", "EMPLOYEE"]
+         },
+         {
+            "link":"http://epfigms.gov.in/",
+            "text":"Register a grievance",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
