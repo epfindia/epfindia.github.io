@@ -45,16 +45,12 @@
   
 		
 </div>
+	<footer class="footer">
+      <div class="container">
+	      <span class="text-muted"><a href="https://github.com/epfindia/epfindia.github.io/issues/new">Have any suggestions?</a></span>
+      </div>
+    </footer>
 <script type="text/javascript">
-    $(document).ready(function () {
-    //Disable full page
-    $("body").on("contextmenu",function(e){
-        return false;
-    });
-    $('body').bind('cut copy paste', function (e) {
-        e.preventDefault();
-    });
-  }); 
   var app = angular.module('myApp', ['ngCookies']);
   app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
                                  $scope.data = [];
