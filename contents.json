@@ -72,6 +72,16 @@
             "tags":["APFC", "PGHS", "RPFC"]
          },
          {
+            "link":"http://pgportal.gov.in/cpgoffice/",
+            "text":"CPGRAM",
+            "tags":["APFC", "PGHS", "RPFC"]
+         },
+         {
+            "link":"https://rtionline.gov.in/RTIMIS/login/",
+            "text":"RTI MIS",
+            "tags":["APFC", "PGHS", "RPFC"]
+         },
+         {
             "link":"https://pmrpy.gov.in/",
             "text":"PMRPY",
             "tags":["APFC","RPFC","ACC"]
