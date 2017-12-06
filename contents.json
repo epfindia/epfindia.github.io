@@ -99,7 +99,7 @@
          {
             "link":"http://www.epfindia.com/site_en/circulars.php",
             "text":"Office circulars",
-            "tags":["APFC","RPFC","ACC"]
+            "tags":["APFC","RPFC","ACC", "EMPLOYEE"]
          },
          {
             "link":"http://www.epfindia.com/site_en/app_tfr_post.php",
@@ -141,7 +141,7 @@
          {
             "link":"https://iwu.epfindia.gov.in/eKYC/",
             "text":"E-KYC Portal",
-            "tags":["APFC","RPFC","ACC"]
+            "tags":["APFC","RPFC","ACC", "EMPLOYEE"]
          }
       ]
    },
@@ -153,12 +153,12 @@
          {
             "link":"http://www.epfindia.com/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf",
             "text":"Form 19,10C, 31",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          },
          {
             "link":"http://www.epfindia.com/site_docs/PDFs/Circulars/Y2017-2018/Manual_CCF_DeathCase_9536.pdf",
             "text":"Form 20, 10D, 5IF",
-            "tags":["APFC"]
+            "tags":["APFC", "EMPLOYEE"]
          }
       ]
    }
