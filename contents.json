@@ -41,7 +41,13 @@
             "text":"SGHS",
             "tags":["APFC"]
          },
+         
          {
+            "link":"https://sparrow.eoffice.gov.in/SPARROW/LoginPage.action",
+            "text":"Sparrow",
+            "tags":["APFC","RPFC"]
+         },
+      {
             "link":"http://iwu.epfoservices.com:8176/epfo/",
             "text":"Compliance MIS",
             "tags":["APFC","RPFC"]
@@ -271,6 +277,11 @@
          {
             "link":"http://103.194.45.139/PPOquery/",
             "text":"PPO Query - Monthly Pension Detail",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"http://103.194.45.139/PensionPaymentEnquiry/",
+            "text":"Pensioners Portal",
             "tags":["APFC","PENSION"]
          },
          {
