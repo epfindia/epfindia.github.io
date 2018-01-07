@@ -148,6 +148,11 @@
             "link":"https://iwu.epfindia.gov.in/eKYC/",
             "text":"E-KYC Portal",
             "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"http://103.194.45.139/memsum.html",
+            "text":"Name change Dashboard",
+            "tags":["APFC","RPFC","ACC"]
          }
       ]
    },
