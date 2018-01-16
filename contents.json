@@ -280,11 +280,6 @@
       "width":"col-md-4",
       "links":[
          {
-            "link":"http://103.194.45.139/PPOquery/",
-            "text":"PPO Query - Monthly Pension Detail",
-            "tags":["APFC","PENSION"]
-         },
-         {
             "link":"http://103.194.45.139/PensionPaymentEnquiry/",
             "text":"Pensioners Portal",
             "tags":["APFC","PENSION"]
