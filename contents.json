@@ -22,13 +22,8 @@
             "tags":["APFC","ACCOUNTS","RPFC","COMP"]
          },
          {
-            "link":"http://cams.epfoservices.com/epfo/adminLogin",
+            "link":"https://iwu.epfindia.gov.in/caiu/",
             "text":"CAIU Login",
-            "tags":["APFC","RPFC","COMP"]
-         },
-         {
-            "link":"http://164.100.94.185/epfo/login.php",
-            "text":"E-court",
             "tags":["APFC","RPFC","COMP"]
          },
          {
