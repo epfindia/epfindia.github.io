@@ -98,12 +98,12 @@
             "tags":["APFC"]
          },
          {
-            "link":"http://www.epfindia.com/site_en/circulars.php",
+            "link":"http://www.epfindia.gov.in/site_en/circulars.php",
             "text":"Office circulars",
             "tags":["APFC","RPFC","ACC", "EMPLOYEE"]
          },
          {
-            "link":"http://www.epfindia.com/site_en/app_tfr_post.php",
+            "link":"http://www.epfindia.gov.in/site_en/app_tfr_post.php",
             "text":"Transfers",
             "tags":["APFC","RPFC","ACC"]
          },
@@ -125,7 +125,7 @@
       "width":"col-md-4",
       "links":[
          {
-            "link":"http://epfindia.com/site_docs/PDFs/dashboard/dash_key_parameter.html",
+            "link":"http://epfindia.gov.in/site_docs/PDFs/dashboard/dash_key_parameter.html",
             "text":"Dashboard Key Parameters",
             "tags":["APFC","RPFC","ACC"]
          },
@@ -157,12 +157,12 @@
       "width":"col-md-4",
       "links":[
          {
-            "link":"http://www.epfindia.com/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf",
+            "link":"http://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf",
             "text":"Form 19,10C, 31",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-            "link":"http://www.epfindia.com/site_docs/PDFs/Circulars/Y2017-2018/Manual_CCF_DeathCase_9536.pdf",
+            "link":"http://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2017-2018/Manual_CCF_DeathCase_9536.pdf",
             "text":"Form 20, 10D, 5IF",
             "tags":["APFC", "EMPLOYEE"]
          }
@@ -186,7 +186,7 @@
             "tags":["APFC", "EMPLOYER"]
          },
          {
-            "link":"http://epfindia.com/site_en/Principal_Employer.php",
+            "link":"http://epfindia.gov.in/site_en/Principal_Employer.php",
             "text":"Principal Employer",
             "tags":["APFC","RPFC", "EMPLOYER"]
          },
