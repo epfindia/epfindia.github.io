@@ -218,11 +218,6 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-            "link":"http://103.194.45.139/UANDEDUP/",
-            "text":"One Employee, One EPF Account",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
             "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome",
             "text":"Establishment Search",
             "tags":["APFC", "EMPLOYEE"]
