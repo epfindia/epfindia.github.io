@@ -218,8 +218,8 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome",
-            "text":"Establishment Search",
+            "link":"https://iwu.epfindia.gov.in/eKYC/LinkUanAadhaar",
+            "text":"Link UAN with Aadhaar",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
@@ -250,11 +250,6 @@
          {
             "link":"https://iwu.epfindia.gov.in/eKYC/trackUan",
             "text":"Track E-KYC",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
-            "link":"https://iwu.epfindia.gov.in/eKYC/LinkUanAadhaar",
-            "text":"Link UAN with Aadhaar",
             "tags":["APFC", "EMPLOYEE"]
          }
       ]
