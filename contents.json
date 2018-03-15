@@ -248,6 +248,11 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
+            "link":"#",
+            "text":"Send SMS 'EPFOHO UAN' to 7738299899",
+            "tags":["APFC", "EMPLOYEE"]
+         }, 
+         {
             "link":"https://iwu.epfindia.gov.in/eKYC/trackUan",
             "text":"Track E-KYC",
             "tags":["APFC", "EMPLOYEE"]
