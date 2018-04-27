@@ -120,7 +120,7 @@
       ]
    },
    {
-      "title":"Dashboard",
+      "title":"Dashboards",
       "class":"panel-success",
       "width":"col-md-4",
       "links":[
@@ -128,6 +128,11 @@
             "link":"http://epfindia.gov.in/site_docs/PDFs/dashboard/dash_key_parameter.html",
             "text":"Dashboard Key Parameters",
             "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"http://10.1.1.63:8080/Form9DashBoard/",
+            "text":"Form 9 Dashboard",
+            "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
             "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/dashboard",
