@@ -13,7 +13,7 @@
          },
          {
             "link":"https://mis.epfindia.gov.in/prtest/prehome.jsp",
-            "text":"MIS",
+            "text":"MIS Website",
             "tags":["APFC","RPFC", "COMP"]
          },
          {
@@ -28,7 +28,7 @@
          },
          {
             "link":"http://eproceedings.epfindia.gov.in ",
-            "text":"E-court New",
+            "text":"E-court Website",
             "tags":["APFC","RPFC","COMP"]
          },
          {
@@ -138,6 +138,11 @@
          {
             "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/dashboard",
             "text":"Dashboard KYC",
+            "tags":["APFC","RPFC","ACC","COMP"]
+         },
+         {
+            "link":"http://eproceedings.epfindia.gov.in/epfo/dashboard.php",
+            "text":"E-Proceedings Dashboard",
             "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
