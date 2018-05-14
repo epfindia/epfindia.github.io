@@ -27,7 +27,7 @@
             "tags":["APFC","RPFC","COMP"]
          },
          {
-            "link":"https://eproceedings.epfindia.gov.in ",
+            "link":"http://eproceedings.epfindia.gov.in ",
             "text":"E-court Website",
             "tags":["APFC","RPFC","COMP"]
          },
@@ -130,7 +130,7 @@
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"https://10.1.1.63:8080/Form9DashBoard/",
+            "link":"http://10.1.1.63:8080/Form9DashBoard/",
             "text":"Form 9 Dashboard",
             "tags":["APFC","RPFC","ACC","COMP"]
          },
@@ -140,7 +140,7 @@
             "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
-            "link":"https://eproceedings.epfindia.gov.in/epfo/dashboard.php",
+            "link":"http://eproceedings.epfindia.gov.in/epfo/dashboard.php",
             "text":"E-Proceedings Dashboard",
             "tags":["APFC","RPFC","ACC","COMP"]
          },
@@ -185,7 +185,7 @@
          },
          {
             "link":"https://mis.epfindia.gov.in/TRRN_SEARCH/",
-            "text":"TRRN SEARCH",
+            "text":"TRRN SEARCH (Old)",
             "tags":["APFC","RPFC", "EMPLOYER"]
          },
          {
