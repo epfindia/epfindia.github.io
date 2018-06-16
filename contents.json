@@ -7,13 +7,13 @@
       "listw":"col-md-6",
       "links":[
          {
-            "link":"http://www.epfindia.gov.in",
+            "link":"https://www.epfindia.gov.in",
             "text":"Main Website",
             "tags":["APFC","RPFC", "COMP"]
          },
          {
-            "link":"http://103.194.45.139/prtest/prehome.jsp",
-            "text":"MIS",
+            "link":"https://mis.epfindia.gov.in/prtest/prehome.jsp",
+            "text":"MIS Website",
             "tags":["APFC","RPFC", "COMP"]
          },
          {
@@ -28,11 +28,11 @@
          },
          {
             "link":"http://eproceedings.epfindia.gov.in ",
-            "text":"E-court New",
+            "text":"E-court Website",
             "tags":["APFC","RPFC","COMP"]
          },
          {
-            "link":"http://hr.epfoservices.com/hrm/sghshome.aspx",
+            "link":"https://hr.epfoservices.com/hrm/sghshome.aspx",
             "text":"SGHS",
             "tags":["APFC"]
          },
@@ -43,7 +43,7 @@
             "tags":["APFC","RPFC"]
          },
       {
-            "link":"http://iwu.epfoservices.com:8176/epfo/",
+            "link":"https://iwu.epfoservices.com:8176/epfo/",
             "text":"Compliance MIS",
             "tags":["APFC","RPFC"]
          },
@@ -53,7 +53,7 @@
             "tags":["APFC","LEGAL"]
          },
          {
-            "link":"http://www.epfigms.gov.in/epfoffice/",
+            "link":"https://www.epfigms.gov.in/epfoffice/",
             "text":"EPFIGMS",
             "tags":["APFC","RPFC", "PGHS"]
          },
@@ -63,8 +63,8 @@
             "tags":["APFC","RPFC","COMP"]
          },
          {
-            "link":"http://gem.gov.in/",
-            "text":"GEM",
+            "link":"https://gem.gov.in/",
+            "text":"GEM Portal",
             "tags":["APFC", "ADMIN"]
          },
          {
@@ -73,8 +73,8 @@
             "tags":["APFC", "PGHS", "RPFC"]
          },
          {
-            "link":"http://pgportal.gov.in/cpgoffice/",
-            "text":"CPGRAM",
+            "link":"https://pgportal.gov.in/cpgoffice/",
+            "text":"CPGRAM Website",
             "tags":["APFC", "PGHS", "RPFC"]
          },
          {
@@ -84,50 +84,55 @@
          },
          {
             "link":"https://pmrpy.gov.in/",
-            "text":"PMRPY",
+            "text":"PMRPY Website",
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"http://aadhaar.epfoservices.com:8080/EPFOWeb/",
+            "link":"https://aadhaar.epfoservices.com:8080/EPFOWeb/",
             "text":"Aadhaar Seeding",
             "tags":["APFC","COMP","RPFC","ACC"]
          },
          {
-            "link":"http://mail.gov.in",
-            "text":"Mail",
+            "link":"https://mail.gov.in",
+            "text":"NIC Mail Website",
             "tags":["APFC"]
          },
          {
-            "link":"http://www.epfindia.gov.in/site_en/circulars.php",
-            "text":"Office circulars",
-            "tags":["APFC","RPFC","ACC", "EMPLOYEE"]
-         },
-         {
-            "link":"http://www.epfindia.gov.in/site_en/app_tfr_post.php",
-            "text":"Transfers",
+            "link":"https://www.epfindia.gov.in/site_en/circulars.php",
+            "text":"Office circulars Page",
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"http://hr.epfoservices.com/hrm/",
-            "text":"HRM Site",
+            "link":"https://www.epfindia.gov.in/site_en/app_tfr_post.php",
+            "text":"Transfers Page",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"https://hr.epfoservices.com/hrm/",
+            "text":"HRM Website",
             "tags":["APFC"]
          },
          {
             "link":"https://esamiksha.gov.in/",
-            "text":"E-samiksha",
+            "text":"E-samiksha Website",
             "tags":["APFC","RPFC", "COMP"]
          }
       ]
    },
    {
-      "title":"Dashboard",
+      "title":"Dashboards",
       "class":"panel-success",
       "width":"col-md-4",
       "links":[
          {
-            "link":"http://epfindia.gov.in/site_docs/PDFs/dashboard/dash_key_parameter.html",
+            "link":"https://epfindia.gov.in/site_docs/PDFs/dashboard/dashboard_key_parameter.pdf",
             "text":"Dashboard Key Parameters",
             "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"http://10.1.1.63:8080/Form9DashBoard/",
+            "text":"Form 9 Dashboard",
+            "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
             "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/dashboard",
@@ -135,7 +140,12 @@
             "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
-            "link":"http://103.194.45.139/prtest/Claims.jsp",
+            "link":"http://eproceedings.epfindia.gov.in/epfo/dashboard.php",
+            "text":"E-Proceedings Dashboard",
+            "tags":["APFC","RPFC","ACC","COMP"]
+         },
+         {
+            "link":"https://mis.epfindia.gov.in/prtest/Claims.jsp",
             "text":"Dashboard Claims",
             "tags":["APFC","RPFC","ACC","ACCOUNTS"]
          },
@@ -145,26 +155,9 @@
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"http://103.194.45.139/memsum.html",
+            "link":"https://mis.epfindia.gov.in/memsum.html",
             "text":"Name change Dashboard",
             "tags":["APFC","RPFC","ACC"]
-         }
-      ]
-   },
-   {
-      "title":"Forms",
-      "class":"panel-warning",
-      "width":"col-md-4",
-      "links":[
-         {
-            "link":"http://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf",
-            "text":"Form 19,10C, 31",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
-            "link":"http://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2017-2018/Manual_CCF_DeathCase_9536.pdf",
-            "text":"Form 20, 10D, 5IF",
-            "tags":["APFC", "EMPLOYEE"]
          }
       ]
    }
@@ -186,18 +179,23 @@
             "tags":["APFC", "EMPLOYER"]
          },
          {
-            "link":"http://epfindia.gov.in/site_en/Principal_Employer.php",
+            "link":"https://epfindia.gov.in/site_en/Principal_Employer.php",
             "text":"Principal Employer",
             "tags":["APFC","RPFC", "EMPLOYER"]
          },
          {
-            "link":"http://103.194.45.139/TRRN_SEARCH/",
-            "text":"TRRN SEARCH",
+            "link":"https://mis.epfindia.gov.in/TRRN_SEARCH/",
+            "text":"TRRN SEARCH (Old)",
+            "tags":["APFC","RPFC", "EMPLOYER"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadSearchTrrnHome",
+            "text":"TRRN SEARCH (New)",
             "tags":["APFC","RPFC", "EMPLOYER"]
          },
          {
             "link":"https://unifiedportal-emp.epfindia.gov.in/epfo/public/olre/registerOwner",
-            "text":"Estt. Registration",
+            "text":"Establishment Registration",
             "tags":["APFC","RPFC", "EMPLOYER"]
          }
       ]
@@ -218,11 +216,6 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-            "link":"https://iwu.epfindia.gov.in/eKYC/LinkUanAadhaar",
-            "text":"Link UAN with Aadhaar",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
             "link":"https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp",
             "text":"Passbook",
             "tags":["APFC", "EMPLOYEE"]
@@ -233,12 +226,12 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-            "link":"http://www.epfindia.gov.in/site_en/KYCS.php",
+            "link":"https://www.epfindia.gov.in/site_en/KYCS.php",
             "text":"Claim Status(Member Id)",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-            "link":"http://103.194.45.139/INOPHelpDesk/",
+            "link":"https://mis.epfindia.gov.in/INOPHelpDesk/",
             "text":"Inoperative Helpdesk",
             "tags":["APFC", "EMPLOYEE"]
          },
@@ -251,7 +244,12 @@
             "link":"#",
             "text":"Send SMS 'EPFOHO UAN' to 7738299899",
             "tags":["APFC", "EMPLOYEE"]
-         }, 
+         },
+         {
+            "link":"https://iwu.epfindia.gov.in/eKYC/LinkUanAadhaar",
+            "text":"Link UAN with Aadhaar",
+            "tags":["APFC", "EMPLOYEE"]
+         },		 
          {
             "link":"https://iwu.epfindia.gov.in/eKYC/trackUan",
             "text":"Track E-KYC",
@@ -267,11 +265,6 @@
          {
             "link":"https://mis.epfindia.gov.in/PensionPaymentEnquiry/",
             "text":"Pensioners Portal",
-            "tags":["APFC","PENSION"]
-         },
-         {
-            "link":"http://103.194.45.139/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp",
-            "text":"DLC status in EPFO DATABASE",
             "tags":["APFC","PENSION"]
          },
          {
