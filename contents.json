@@ -131,7 +131,7 @@
          },
          {
             "link":"http://10.1.1.63:8080/Form9DashBoard/",
-            "text":"Form 9 Dashboard",
+            "text":"Form 9 Dashboard(internal)",
             "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
@@ -145,7 +145,7 @@
             "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
-            "link":"https://mis.epfindia.gov.in/prtest/Claims.jsp",
+            "link":"https://mis.epfindia.gov.in/prtest_old/Claims.jsp",
             "text":"Dashboard Claims",
             "tags":["APFC","RPFC","ACC","ACCOUNTS"]
          },
