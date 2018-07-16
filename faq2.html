@@ -58,10 +58,18 @@ color:#fff;
 				</div>
 			</div>
 			<div class="btn-group">	
-            <button type="button" ng-click="change_tag('employer')"     ng-class="{'active':(tag == 'employer')}"     class="btn btn-default">Employer</button>	            
-            <button type="button" ng-click="change_tag('employee')" ng-class="{'active':(tag == 'employee')}" class="btn btn-default">Employee</button>
-            <button type="button" ng-click="change_tag('claim')" ng-class="{'active':(tag == 'claim')}" class="btn btn-default">Elaim</button> 
-            <button type="button" ng-click="change_tag('unified')"  ng-class="{'active':(tag == 'unified')}"  class="btn btn-default">Unified</button>
+			<button type="button" ng-click="change_tag('employee')" ng-class="{'active':(tag == 'employee')}" class="btn btn-default">Employee</button>
+			<button type="button" ng-click="change_tag('employer')"     ng-class="{'active':(tag == 'employer')}"     class="btn btn-default">Employer</button>	            
+			<button type="button" ng-click="change_tag('claim')" ng-class="{'active':(tag == 'claim')}" class="btn btn-default">Claim</button> 
+			<button type="button" ng-click="change_tag('transfer')" ng-class="{'active':(tag == 'transfer')}" class="btn btn-default">Transfer</button> 
+			<button type="button" ng-click="change_tag('nomination')" ng-class="{'active':(tag == 'nomination')}" class="btn btn-default">Nomination</button> 
+			<button type="button" ng-click="change_tag('contribution')" ng-class="{'active':(tag == 'contribution')}" class="btn btn-default">Contribution</button> 
+			<button type="button" ng-click="change_tag('membership')" ng-class="{'active':(tag == 'membership')}" class="btn btn-default">Membership</button>
+			<button type="button" ng-click="change_tag('pension')" ng-class="{'active':(tag == 'pension')}" class="btn btn-default">Pension</button>
+			<button type="button" ng-click="change_tag('edli')" ng-class="{'active':(tag == 'edli')}" class="btn btn-default">EDLI</button>
+			<button type="button" ng-click="change_tag('advance')"  ng-class="{'active':(tag == 'advance')}"  class="btn btn-default">Advance</button>
+			<button type="button" ng-click="change_tag('interest')"  ng-class="{'active':(tag == 'interest')}"  class="btn btn-default">Interest</button>			
+            <button type="button" ng-click="change_tag('uan')"  ng-class="{'active':(tag == 'uan')}"  class="btn btn-default">UAN</button>
         </div>
 		  
 			<div class="panel-group" id="accordion">
@@ -90,7 +98,7 @@ color:#fff;
                 $scope.tag = favoriteCookie;
             } else
             {
-                $scope.tag = 'unified';
+                $scope.tag = 'uan';
                 $cookies.put('selected_tag', '');
             }
 
