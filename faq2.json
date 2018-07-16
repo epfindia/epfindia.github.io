@@ -1,0 +1,98 @@
+[
+  {
+    "sr": 1,
+    "question": "I am an <b>employee</b> working in an establishment to which the PF Act is not applicable. Can I become a member of the EPF?",
+    "answer": "An employee can become a member only after the application of the Act to the establishment.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 2,
+    "question": "If an employee is not given the PF membership, to whom he can approach?",
+    "answer": "He can approach his employer failing which he can approach the Regional Provident Fund Commissioner of the nearest PF office.",
+	"tags":["claim"]
+  },
+  {
+    "sr": 3,
+    "question": "Whether the employee working in a Branch Unit of an establishment located outside the state is eligible to become a member of the EPF?",
+    "answer": "The Act is applicable to an establishment as a whole. Hence, its employees, irrespective of their place of work or location, are eligible to become member of the Fund.",
+	"tags":["employee", "claim"]
+  },
+  {
+    "sr": 4,
+    "question": "If an employee is working in more than one establishment how his membership is regulated?",
+    "answer": "His membership is reckoned separately for each establishment. (Under different Provident Fund Account Numbers/ member Ids)",
+	"tags":["employer", "claim"]
+  },
+  {
+    "sr": 5,
+    "question": "Can an employee become a member of EPF without any age restriction?",
+    "answer": "There is no age restriction for becoming a member of the Provident Fund, whereas an employee who has already attained the age of 58 cannot become a member of the Pension Fund.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 6,
+    "question": "Whether an employee can become a member of the EPF without any restriction to his salary/wages?",
+    "answer": "The employees who are drawing the basic wages and dearness allowance up to Rs.15, 000/- are alone eligible to become a member. He will continue to be a member even when his pay exceeds Rs.15, 000/-. However, his contribution to the Fund will be restricted to Rs.15, 000/-. The employer is also required to pay his matching contribution up to Rs.15, 000/-. Employees drawing more than Rs.15000/- can also become a member of EPF by giving option under para 26(6) of the EPF Scheme. The option has to be submitted to the EPF office within 6 months of joining of such member.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 7,
+    "question": "Whether an apprentice can become a member of the EPF?",
+    "answer": "No. But, when he ceases to be an apprentice he should be enrolled immediately.",
+	"tags":["employer", "unified"]
+  },
+  {
+    "sr": 8,
+    "question": "If an employee is drawing more than Rs. 15000/- (Basic + DA only) is he required to become a member of the EPF?",
+    "answer": "Such employee is not required to become a member, if he is not already holding the PF membership. Otherwise, if both the employer and employee are willing, he can become a member by giving option under Para-26 (6) of the PF Scheme. The option has to be submitted to the EPF office within 6 months of joining of such member.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 9,
+    "question": "If an employee is transferred from one establishment to another establishment whether he is required to be enrolled as a member once again?",
+    "answer": "He is required to be enrolled as a member under the new establishment, for transferring his Provident Fund from his previous account.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 10,
+    "question": "If a person is working in an establishment without receiving any wages whether he can be given the PF membership?",
+    "answer": "Membership is allowed only where the wages are payable to an employee.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 11,
+    "question": "Whether an employee can become a member of the Pension Scheme only, without contributing to the PF?",
+    "answer": "No. By virtue of membership of Provident Fund only one can become a member of the Pension Scheme. From 01/09/2014 any new employee joining an establishment and drawing basic wage more than Rs.15000/- per month can only become a member of the PF after submitting option as per the provisions of Para 26(6) of the EPF Scheme. However, he can%u2019t get the membership to the Pension Fund. Both employee share of 12% and employer share of 12% contribution shall be paid into the Provident Fund only for all such employees.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 12,
+    "question": "Whether an employee can continue as a PF member even after his retirement?",
+    "answer": "Yes. If one continues to work even after attaining the superannuation age.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 13,
+    "question": "Is there any option available to an employee whether to become a member of the EPF or not?",
+    "answer": "No option.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 14,
+    "question": "Whether an EPF member can discontinue his membership, while in employment?",
+    "answer": "Not permissible.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 15,
+    "question": "Where an establishment is having its own recognized private PF Trust whether an employee can be allowed to continue in the private PF without joining the EPF?",
+    "answer": "Employee can be allowed to join the private PF Trust but the Trust has to take exemption from the EPF Scheme. He will however continue to be governed by the Pension and EDLI Schemes. All private trusts must obtain exemption from EPFO to enjoy Income Tax benefits.",
+	"tags":["employer", "employee", "claim"]
+  },
+  {
+    "sr": 16,
+    "question": "How long an employee can continue his EPF membership?",
+    "answer": "There is no restriction of period for membership. Even after leaving the establishment a person can continue his membership. However, if no contribution is received into a PF account for 3 consecutive years the account <u>shall not earn any interest after 3 years</u> from the stopping of contribution.",
+	"tags":["employer", "employee", "unified"]
+  }
+]
