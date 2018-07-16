@@ -58,6 +58,7 @@ color:#fff;
 				</div>
 			</div>
 			<div class="btn-group">	
+			<button type="button" ng-click="change_tag('')" ng-class="{'active':(tag == '')}" class="btn btn-default">All</button>
 			<button type="button" ng-click="change_tag('employee')" ng-class="{'active':(tag == 'employee')}" class="btn btn-default">Employee</button>
 			<button type="button" ng-click="change_tag('employer')"     ng-class="{'active':(tag == 'employer')}"     class="btn btn-default">Employer</button>	            
 			<button type="button" ng-click="change_tag('claim')" ng-class="{'active':(tag == 'claim')}" class="btn btn-default">Claim</button> 
