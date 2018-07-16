@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+.list-group {
+	margin-bottom:0px;
+}
+.vis-hidden{
+     visibility: hidden;
+  }
+	.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+
+h3 a {
+
+color:#fff;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+</head>
+<body>
+	<div class="container" ng-app="myApp" ng-controller="namesCtrl">
+		<div class="btn-group">
+			<a href="./" class="btn btn-sq-lg btn-default"><i class="fa fa-user"> Back</i></a>
+		</div>
+		<div class="row">
+			<h2>Frequently Asked Questions</h2>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<input type="text" style="width:100%; padding:4px;" placeholder="Search by keyword..." ng-model="test" />
+				</div>
+			</div>
+			<div class="btn-group">	
+            <button type="button" ng-click="change_tag('employer')"     ng-class="{'active':(tag == 'employer')}"     class="btn btn-default">Employer</button>	            
+            <button type="button" ng-click="change_tag('employee')" ng-class="{'active':(tag == 'employee')}" class="btn btn-default">Employee</button>
+            <button type="button" ng-click="change_tag('claim')" ng-class="{'active':(tag == 'claim')}" class="btn btn-default">Elaim</button> 
+            <button type="button" ng-click="change_tag('unified')"  ng-class="{'active':(tag == 'unified')}"  class="btn btn-default">Unified</button>
+        </div>
+		  
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default" ng-repeat="x in offices  | filter:test| filter:{'tags':  tag}">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#Q{{x.sr}}" class="collapsed" aria-expanded="false">Q.{{x.sr}} <span ng-bind-html="x.question"></span> </a>
+						</h4>
+					</div>
+					<div id="Q{{x.sr}}" class="panel-collapse collapse" aria-expanded="false" style="">
+						<div class="panel-body"><p ng-bind-html="x.answer"></p> </div>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
+<script type="text/javascript">
+
+//<![CDATA[
+
+  var app = angular.module('myApp', ['ngCookies','ngSanitize']);
+  app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
+								//$scope.tag = 'unified';
+								var favoriteCookie = $cookies.get('selected_tag');
+            if (favoriteCookie) {
+                $scope.tag = favoriteCookie;
+            } else
+            {
+                $scope.tag = 'unified';
+                $cookies.put('selected_tag', '');
+            }
+
+            $scope.change_tag = function (tag)
+            {
+                $scope.tag = tag;
+                $cookies.put('selected_tag', tag);
+            };
+                                 $http({
+                                   method: 'GET',
+                                   url: 'faq2.json'
+                                 }).then(function (success){
+                                   $scope.offices = success.data;
+                                 },function (error){
+                                   console.log(error)
+                                 });
+                               }]);
+  //]]>
+  </script>
+</body>
+</html>
