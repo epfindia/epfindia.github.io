@@ -268,6 +268,16 @@
             "tags":["APFC","PENSION"]
          },
          {
+            "link":"https://mis.epfindia.gov.in/JeevanPramaan//",
+            "text":"JeevanPramaan Dashboard",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"https://mis.epfindia.gov.in/PensionDashboard/",
+            "text":"Pensioners Dashboard",
+            "tags":["APFC","PENSION"]
+         },
+         {
             "link":"https://jeevanpramaan.gov.in/ppouser/login",
             "text":"Jeevan Pramaan Website - DLC Status ",
             "tags":["APFC","PENSION"]
