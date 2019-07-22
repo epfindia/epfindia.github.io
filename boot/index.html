@@ -145,7 +145,7 @@ app.controller('rrCtrl', ['$scope','$cookies','$cookieStore', '$http', function(
 	};
 	$http({
 		method: 'GET',
-		url: 'http://localhost/bootstrap/suggestions.json'
+		url: './suggestions.json'
 	}).then(function (success){
 		$scope.sugg =success1;
 		console.log();
