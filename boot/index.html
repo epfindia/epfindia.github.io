@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js" type="text/javascript"></script>
+	<title>EPFO</title>
+</head>
+
+
+<body ng-app="myApp">
+	<nav>
+		<div class="bs-component">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+				<a class="navbar-brand" href="#">EPFO</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarColor01">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="#!rr">Return and Remittance</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!mem">Membership</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!cpe">Contrator and Principle Employer</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!not">Notices</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!cir">Circulars</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!gnm">Guides & Manuals</a></li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+						<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div ng-view></div>
+			</div>
+		</div>
+	</div>
+	<footer class="section footer-classic context-dark bg-image" style="background: #2196F3 !important;">
+		<div class="s24-bar__utilities w-full bg-color-black-secondary m-a-0">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-sm-9">
+				<p style="margin-top: 14px; color:#fff;">
+				  Copyrights © All Rights Reserved by <a class="alert" href="#">Company</a>
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</footer>
+
+<script>
+var app = angular.module("myApp", ["ngRoute","ngCookies"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "home.html",
+        controller : "homCtrl"
+    })
+    .when("/london", {
+        templateUrl : "london.htm",
+        controller : "londonCtrl"
+    })
+    .when("/paris", {
+        templateUrl : "paris.htm",
+        controller : "parisCtrl"
+    })
+	.when("/rr", {
+        templateUrl : "rr.html",
+        controller : "rrCtrl"
+    })
+	.when("/mem", {
+        templateUrl : "mem.html",
+        controller : "memCtrl"
+    })
+	.when("/cpe", {
+        templateUrl : "cpe.html",
+        controller : "cpeCtrl"
+    })
+	.when("/not", {
+        templateUrl : "not.html",
+        controller : "notCtrl"
+    })
+	.when("/cir", {
+        templateUrl : "cir.html",
+        controller : "cirCtrl"
+    })
+	.when("/gnm", {
+        templateUrl : "gnm.html",
+        controller : "gnmCtrl"
+    });
+});
+app.controller("londonCtrl", function ($scope) {
+    $scope.msg = "showing London";
+});
+app.controller("parisCtrl", function ($scope) {
+    $scope.msg = "showing Paris";
+});
+app.controller("homCtrl", function ($scope) {
+    $scope.msg = "showing home";
+});
+app.controller('rrCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
+	$scope.names = [];
+	$scope.test='';
+	$scope.msg = "showing rr";
+	success1 = {
+		"heading":["Sr","Title","JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"],
+		"data":[
+			[1, "Total UAN", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[2, "Exited", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[3, "Active", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[4, "No of ECRs filed", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[5, "Paid for no of UANs", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[6, "Total amount paid (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[7, "Not paid for UANs", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[8, "Short Payments (Rs) against 5", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[9, "Damages due on delay (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[10, "Interest Due on delay (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[11, "Damages paid (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[12, "Interest paid (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[13, "Balance Damages payable (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[14, "Balance Interest payable (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[15, "New Employees joined", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[16, "PMRPY benefit taken for", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[17, "Benefit amount (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[18, "Any recovery due (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[19, "Amount refunded (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[20, "Interest/Damages paid (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
+			[21, "Balance principal amount (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115]
+		]
+	};
+	$http({
+		method: 'GET',
+		url: 'http://localhost/bootstrap/suggestions.json'
+	}).then(function (success){
+		$scope.sugg =success1;
+		console.log();
+	},function (error){
+		console.log(error)
+	});
+}]);
+
+app.controller("memCtrl", function ($scope) {
+    $scope.msg = "showing mem";
+});
+
+app.controller("cpeCtrl", function ($scope) {
+    $scope.msg = "showing cpe";
+});
+
+app.controller("notCtrl", function ($scope) {
+    $scope.msg = "showing notices";
+});
+
+app.controller("cirCtrl", function ($scope) {
+    $scope.msg = "showing circulars";
+});
+
+app.controller("gnmCtrl", function ($scope) {
+    $scope.msg = "showing circulars";
+});
+
+</script>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
