@@ -44,6 +44,7 @@
 						<li class="nav-item"><a class="nav-link" href="#!not">Notices</a></li>
 						<li class="nav-item"><a class="nav-link" href="#!cir">Circulars</a></li>
 						<li class="nav-item"><a class="nav-link" href="#!gnm">Guides & Manuals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!clm">Claim</a></li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -113,6 +114,10 @@ app.config(function($routeProvider) {
 	.when("/gnm", {
         templateUrl : "gnm.html",
         controller : "gnmCtrl"
+    })
+    .when("/clm", {
+        templateUrl : "clm.html",
+        controller : "clmCtrl"
     });
 });
 app.controller("londonCtrl", function ($scope) {
@@ -184,6 +189,11 @@ app.controller("cirCtrl", function ($scope) {
 app.controller("gnmCtrl", function ($scope) {
     $scope.msg = "showing circulars";
 });
+    
+app.controller("clmCtrl", function ($scope) {
+    $scope.msg = "I am claim controller";
+});
+
 
 </script>
 
