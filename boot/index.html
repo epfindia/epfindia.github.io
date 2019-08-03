@@ -45,6 +45,7 @@
 						<li class="nav-item"><a class="nav-link" href="#!cir">Circulars</a></li>
 						<li class="nav-item"><a class="nav-link" href="#!gnm">Guides & Manuals</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!clm">Claim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!elg">eligibility</a></li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -118,6 +119,10 @@ app.config(function($routeProvider) {
     .when("/clm", {
         templateUrl : "clm.html",
         controller : "clmCtrl"
+    })
+    .when("/elg", {
+        templateUrl : "elg.html",
+        controller : "elgCtrl"
     });
 });
 app.controller("londonCtrl", function ($scope) {
@@ -192,6 +197,10 @@ app.controller("gnmCtrl", function ($scope) {
     
 app.controller("clmCtrl", function ($scope) {
     $scope.msg = "I am claim controller";
+});
+    
+app.controller("elgCtrl", function ($scope) {
+    $scope.msg = "I am eligible";
 });
 
 
