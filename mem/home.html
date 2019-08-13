@@ -1,0 +1,327 @@
+<style>
+.section-title {
+	position: relative
+}
+.section-title p {
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+.section-title h4 {
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: capitalize;
+	position: relative;
+	padding-bottom: 20px;
+	display: inline-block
+}
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 2px;
+	background-color: #d8d8d8;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+.section-title h4:after {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #FF7200;
+	left: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+.services {
+	background-color: #FBFBFB;
+}
+.single-service {
+	position: relative;
+	text-align: center;
+	margin-bottom: 10px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	padding: 20px 10px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16)
+}
+.single-service:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	background-color: #FF7200;
+	left: 0;
+	top: 0;
+	content: "";
+	-webkit-transition: .3s;
+	transition: .3s
+}
+.single-service:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	background-color: #FF7200;
+	right: 0;
+	bottom: 0;
+	content: "";
+	-webkit-transition: .3s;
+	transition: .3s
+}
+.single-service:hover:after,
+.single-service:hover:before {
+	width: 50%;
+	height: 2px;
+	-webkit-transition: .3s;
+	transition: .3s
+}
+.single-service:hover {
+	box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.10)
+}
+.single-service i.fa {
+	font-size: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #ddd;
+	line-height: 60px;
+	margin-bottom: 30px;
+	border-radius: 50%;
+	-webkit-transition: .3s;
+	transition: .3s
+}
+.single-service:hover i.fa {
+	background-color: #FF7200;
+	color: #fff;
+	border-color: #FF7200;
+	border-radius: 0;
+}
+.single-service h4 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+.single-service p {
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+</style>
+
+<div class="container">
+<section class="services" id="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title">
+                     <h4>Establishment Profile</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-laptop"></i>
+                     <h4>Basic Details</h4>
+                     <p>Name: Global Pvt. Ltd.</p>
+					 <p>Address: XXX xx xx xxx xx</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-gears"></i>
+                     <h4>Exemption status</h4>
+                     <table class="table table-sm table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Scheme</th>
+								<th scope="col">Status</th>
+								<th scope="col">Last Return Filed</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Provident Fund</td>
+								<td>E/U</td>
+								<td>06/07/2019</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Pension</td>
+								<td>E/U</td>
+								<td>06/07/2019</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Insurance</td>
+								<td>E/U</td>
+								<td>06/07/2019</td>
+							</tr>
+						</tbody>
+					</table>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-fa fa-lightbulb-o"></i>
+                     <h4>Branding</h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                  </div>
+               </div>
+			   <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                    <i class="fa fa-magic"></i>
+                    <h4>Other Details</h4>
+                    <ul class="list-group">
+						<li class="list-group-item text-left">Activity: XXXXX XXXX XXX <a href="#">Update</a></li>
+						<li class="list-group-item text-left">Activity as per NIC code: XXXXX XXXX XXX <a href="#">Update</a></li>
+						<li class="list-group-item text-left">Ownership Type: XXXXXXX XXXX XX <a href="#">Update</a></li>
+						<li class="list-group-item text-left">PAN: XXXXXXXXX </li>
+					</ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-pencil"></i>
+                     <h4>Form 5A</h4>
+                    <table class="table table-sm table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Last filed</th>
+								<th scope="col">06/07/2019</th>
+								<th scope="col"><a href="">Update</a></th>
+							</tr>
+						</thead>
+					</table>
+					                    <ul class="list-group">
+						<li class="list-group-item text-left active font-weight-bold">Main unit Details </li>
+						<li class="list-group-item text-left">Name: XXXXXXXXX </li>
+						<li class="list-group-item text-left">Address: XXXXXXXXX </li>
+						<li class="list-group-item text-left">RO: XXXXXXXXX </li>
+					</ul>
+                  </div>
+               </div>
+				<div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-mobile"></i>
+                     <h4>Authorised officer's Details</h4>
+                        <table class="table table-sm table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Title</th>
+								<th scope="col">Detail</th>
+								<th scope="col">No. of Est. Represented</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Name</td>
+								<td>XXXXXX XXX </td>
+								<td>N/A</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Mobile</td>
+								<td>1234567890</td>
+								<td>100</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>E-Mail</td>
+								<td>a@b.com</td>
+								<td>130</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Digital Signature</td>
+								<td>XXXXXX</td>
+								<td>130</td>
+							</tr>
+						</tbody>
+					</table>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+      </section>
+	<div class="resume">
+<div class="col-xs-12 col-sm-12">
+				<small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Sunday, October 05, 2014</time></small>
+              <table class="table table-sm table-bordered">
+						<thead>
+							<tr>
+								<th scope="col" colspan="6" class="text-center">Other Authorised Signatories</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Name</th>
+								<th scope="col">Designation</th>
+								<th scope="col">Mobile</th>
+								<th scope="col">E-Mail</th>
+								<th scope="col">DS(es)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>xxxxx</td>
+								<td>xxxxx</td>
+								<td>1234567890</td>
+								<td>a@b.com</td>
+								<td>xxsxxx</td>
+							</tr>
+						</tbody>
+					</table>
+			<table class="table table-sm table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col" colspan="2">Title</th>
+								<th scope="col">Count</th>
+								<th scope="col">Members</th>
+								<th scope="col">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td colspan="2">Number of units with separate registratuion number</td>
+								<td>12</td>
+								<td>850</td>
+								<td><button type="button" class="btn btn-outline-primary btn-sm">Update</button></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td colspan="2">Number of units without separate registration number</td>
+								<td>12</td>
+								<td>850</td>
+								<td><button type="button" class="btn btn-outline-primary btn-sm">Update</button></td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td colspan="2">Number of units with same PAN</td>
+								<td>12</td>
+								<td>850</td>
+								<td><button type="button" class="btn btn-outline-primary btn-sm">Update</button></td>
+							</tr>
+						</tbody>
+					</table>	
+            </div>
+	</div>
+</div>
