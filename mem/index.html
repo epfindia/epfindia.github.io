@@ -41,59 +41,59 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">View</a>
-								<a class="dropdown-item" href="#">Claim Eligibility</a>
+								<a class="dropdown-item" href="#!profile">View</a>
+								<a class="dropdown-item" href="#!eligibility">Claim Eligibility</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Basic Details</a>
-								<a class="dropdown-item" href="#">KYC</a>
-								<a class="dropdown-item" href="#">Family & E-Nomination</a>
+								<a class="dropdown-item" href="#!basic">Basic Details</a>
+								<a class="dropdown-item" href="#!kyc">KYC</a>
+								<a class="dropdown-item" href="#!nomination">Family & E-Nomination</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Service Details</a>
-								<a class="dropdown-item" href="#">UAN Card</a>
-								<a class="dropdown-item" href="#">Contact Details</a>
+								<a class="dropdown-item" href="#!service">Service Details</a>
+								<a class="dropdown-item" href="#!uan">UAN Card</a>
+								<a class="dropdown-item" href="#!contact">Contact Details</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Change Password</a>
+								<a class="dropdown-item" href="#!password">Change Password</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transactions</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Projections</a>
+								<a class="dropdown-item" href="#!projections">Projections</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Passbook</a>
-								<a class="dropdown-item" href="#">ETF Details</a>
-								<a class="dropdown-item" href="#">Claim status & History</a>
+								<a class="dropdown-item" href="#!passbook">Passbook</a>
+								<a class="dropdown-item" href="#!etf">ETF Details</a>
+								<a class="dropdown-item" href="#!history">Claim status & History</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Claims</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Claim status & History</a>
+								<a class="dropdown-item" href="#!history">Claim status & History</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Transfer/Merge</a>
-								<a class="dropdown-item" href="#">Claim Eligibility</a>
-								<a class="dropdown-item" href="#">New Claim</a>
-								<a class="dropdown-item" href="#">Annexure K</a>
+								<a class="dropdown-item" href="#!merge">Transfer/Merge</a>
+								<a class="dropdown-item" href="#!eligibility">Claim Eligibility</a>
+								<a class="dropdown-item" href="#!newclaim">New Claim</a>
+								<a class="dropdown-item" href="#!annexk">Annexure K</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Int. Worker</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">IW to DW</a>
-								<a class="dropdown-item" href="#">DW to IW</a>
+								<a class="dropdown-item" href="#!iwtodw">IW to DW</a>
+								<a class="dropdown-item" href="#!dwtoiw">DW to IW</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">COC Generation</a>
-								<a class="dropdown-item" href="#">COC Extension</a>
-								<a class="dropdown-item" href="#">COC Cancellation</a>
+								<a class="dropdown-item" href="#!cocgen">COC Generation</a>
+								<a class="dropdown-item" href="#!cocext">COC Extension</a>
+								<a class="dropdown-item" href="#!coccen">COC Cancellation</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Totalization Request</a>
+								<a class="dropdown-item" href="#!totreq">Totalization Request</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pension</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">View PPO</a>
-								<a class="dropdown-item" href="#">View </a>
+								<a class="dropdown-item" href="#!viewppo">View PPO</a>
+								<a class="dropdown-item" href="#!viewpp">View Pension Passbook</a>
 								<a class="dropdown-item" href="#">Contact Office</a>
 							</div>
 						</li>
@@ -105,7 +105,7 @@
 								<a class="dropdown-item" href="#">Contact Office</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="#!elg">Guides</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!profile">Guides</a></li>
 						<li class="nav-item"><a class="nav-link" href="#!elg">Notifications</a></li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0">
@@ -145,124 +145,131 @@ app.config(function($routeProvider) {
         templateUrl : "home.html",
         controller : "homCtrl"
     })
-    .when("/london", {
-        templateUrl : "london.htm",
-        controller : "londonCtrl"
+    .when("/profile", {
+        templateUrl : "profile.html",
+        controller : "profileCtrl"
     })
-    .when("/paris", {
-        templateUrl : "paris.htm",
-        controller : "parisCtrl"
+	.when("/eligibilty", {
+        templateUrl : "eligibilty.html",
+        controller : "eligibiltyCtrl"
     })
-	.when("/rr", {
-        templateUrl : "rr.html",
-        controller : "rrCtrl"
+	.when("/basic", {
+        templateUrl : "basic.html",
+        controller : "basicCtrl"
     })
-	.when("/mem", {
-        templateUrl : "mem.html",
-        controller : "memCtrl"
+	.when("/kyc", {
+        templateUrl : "kyc.html",
+        controller : "kycCtrl"
     })
-	.when("/cpe", {
-        templateUrl : "cpe.html",
-        controller : "cpeCtrl"
+	.when("/nomination", {
+        templateUrl : "nomination.html",
+        controller : "nominationCtrl"
     })
-	.when("/not", {
-        templateUrl : "not.html",
-        controller : "notCtrl"
+	.when("/service", {
+        templateUrl : "service.html",
+        controller : "serviceCtrl"
     })
-	.when("/cir", {
-        templateUrl : "cir.html",
-        controller : "cirCtrl"
+	.when("/uan", {
+        templateUrl : "uan.html",
+        controller : "uanCtrl"
     })
-	.when("/gnm", {
-        templateUrl : "gnm.html",
-        controller : "gnmCtrl"
+	.when("/contact", {
+        templateUrl : "contact.html",
+        controller : "contactCtrl"
     })
-    .when("/clm", {
-        templateUrl : "clm.html",
-        controller : "clmCtrl"
+	.when("/password", {
+        templateUrl : "password.html",
+        controller : "passwordCtrl"
     })
-    .when("/elg", {
-        templateUrl : "elg.html",
-        controller : "elgCtrl"
+	.when("/projections", {
+        templateUrl : "projections.html",
+        controller : "projectionsCtrl"
+    })
+	.when("/passbook", {
+        templateUrl : "passbook.html",
+        controller : "passbookCtrl"
+    })
+	.when("/etf", {
+        templateUrl : "etf.html",
+        controller : "etfCtrl"
+    })
+	.when("/history", {
+        templateUrl : "history.html",
+        controller : "historyCtrl"
+    })
+	.when("/merge", {
+        templateUrl : "merge.html",
+        controller : "mergeCtrl"
+    })
+	.when("/newclaim", {
+        templateUrl : "newclaim.html",
+        controller : "newclaimCtrl"
+    })
+	.when("/annexk", {
+        templateUrl : "annexk.html",
+        controller : "annexkCtrl"
+    })
+	.when("/iwtodw", {
+        templateUrl : "iwtodw.html",
+        controller : "iwtodwCtrl"
+    })
+	.when("/dwtoiw", {
+        templateUrl : "dwtoiw.html",
+        controller : "dwtoiwCtrl"
+    })
+	.when("/cocgen", {
+        templateUrl : "cocgen.html",
+        controller : "cocgenCtrl"
+    })
+	.when("/cocext", {
+        templateUrl : "cocext.html",
+        controller : "cocextCtrl"
+    })
+	.when("/coccen", {
+        templateUrl : "coccen.html",
+        controller : "coccenCtrl"
+    })
+	.when("/totreq", {
+        templateUrl : "totreq.html",
+        controller : "totreqCtrl"
+    })
+	.when("/viewppo", {
+        templateUrl : "viewppo.html",
+        controller : "viewppoCtrl"
+    })
+	.when("/viewpp", {
+        templateUrl : "viewpp.html",
+        controller : "viewppCtrl"
     });
 });
-app.controller("londonCtrl", function ($scope) {
-    $scope.msg = "showing London";
-});
-app.controller("parisCtrl", function ($scope) {
-    $scope.msg = "showing Paris";
-});
-app.controller("homCtrl", function ($scope) {
-    $scope.msg = "showing home";
-});
-app.controller('rrCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
-	$scope.names = [];
-	$scope.test='';
-	$scope.msg = "showing rr";
-	success1 = {
-		"heading":["Sr","Title","JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"],
-		"data":[
-			[1, "Total UAN", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[2, "Exited", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[3, "Active", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[4, "No of ECRs filed", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[5, "Paid for no of UANs", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[6, "Total amount paid (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[7, "Not paid for UANs", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[8, "Short Payments (Rs) against 5", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[9, "Damages due on delay (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[10, "Interest Due on delay (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[11, "Damages paid (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[12, "Interest paid (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[13, "Balance Damages payable (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[14, "Balance Interest payable (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[15, "New Employees joined", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[16, "PMRPY benefit taken for", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[17, "Benefit amount (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[18, "Any recovery due (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[19, "Amount refunded (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[20, "Interest/Damages paid (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115],
-			[21, "Balance principal amount (Rs)", 100, 110, 112, 115, 100, 110, 112, 115, 100, 110, 112, 115]
-		]
-	};
-	$http({
-		method: 'GET',
-		url: './suggestions.json'
-	}).then(function (success){
-		$scope.sugg =success1;
-		console.log();
-	},function (error){
-		console.log(error)
-	});
-}]);
 
-app.controller("memCtrl", function ($scope) {
-    $scope.msg = "showing mem";
-});
+app.controller("homCtrl", function ($scope) { $scope.msg = "Home"; });
+app.controller("profileCtrl", function ($scope) { $scope.msg = "Profile"; });
+app.controller("eligibiltyCtrl", function ($scope) { $scope.msg = "Eligibility"; });
+app.controller("basicCtrl", function ($scope) { $scope.msg = "Basic Details Change"; });
+app.controller("kycCtrl", function ($scope) { $scope.msg = "KYC Change"; });
+app.controller("nominationCtrl", function ($scope) { $scope.msg = "E-nomination Change"; });
+app.controller("serviceCtrl", function ($scope) { $scope.msg = "Service"; });
+app.controller("uanCtrl", function ($scope) { $scope.msg = "UAN Card"; });
+app.controller("contactCtrl", function ($scope) { $scope.msg = "Contact"; });
+app.controller("passwordCtrl", function ($scope) { $scope.msg = "Password"; });
+app.controller("projectionsCtrl", function ($scope) { $scope.msg = "Projections"; });
+app.controller("passbookCtrl", function ($scope) { $scope.msg = "Passbook"; });
+app.controller("etfCtrl", function ($scope) { $scope.msg = "ETF"; });
+app.controller("historyCtrl", function ($scope) { $scope.msg = "History"; });
+app.controller("mergeCtrl", function ($scope) { $scope.msg = "Merge"; });
+app.controller("newclaimCtrl", function ($scope) { $scope.msg = "New Claim"; });
+app.controller("annexkCtrl", function ($scope) { $scope.msg = "Annexure K"; });
+app.controller("iwtodwCtrl", function ($scope) { $scope.msg = "International worker to Domestic worker"; });
+app.controller("dwtoiwCtrl", function ($scope) { $scope.msg = "Domestic Worker to International Worker"; });
+app.controller("cocgenCtrl", function ($scope) { $scope.msg = "COC Generation"; });
+app.controller("cocextCtrl", function ($scope) { $scope.msg = "COC Extension"; });
+app.controller("coccenCtrl", function ($scope) { $scope.msg = "COC Cancellation"; });
+app.controller("totreqCtrl", function ($scope) { $scope.msg = "Totalization Request"; });
+app.controller("viewppoCtrl", function ($scope) { $scope.msg = "View PPO"; });
+app.controller("viewppCtrl", function ($scope) { $scope.msg = "VIew Pensioners passbook"; });
 
-app.controller("cpeCtrl", function ($scope) {
-    $scope.msg = "showing cpe";
-});
 
-app.controller("notCtrl", function ($scope) {
-    $scope.msg = "showing notices";
-});
-
-app.controller("cirCtrl", function ($scope) {
-    $scope.msg = "showing circulars";
-});
-
-app.controller("gnmCtrl", function ($scope) {
-    $scope.msg = "showing circulars";
-});
-    
-app.controller("clmCtrl", function ($scope) {
-    $scope.msg = "I am claim controller";
-});
-    
-app.controller("elgCtrl", function ($scope) {
-    $scope.msg = "I am eligible";
-});
 
 
 </script>
