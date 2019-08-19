@@ -77,7 +77,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Int. Worker</a>
+							<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Int. Worker</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="#!iwtodw">IW to DW</a>
 								<a class="dropdown-item" href="#!dwtoiw">DW to IW</a>
@@ -90,23 +90,23 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pension</a>
+							<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pension</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="#!viewppo">View PPO</a>
 								<a class="dropdown-item" href="#!viewpp">View Pension Passbook</a>
-								<a class="dropdown-item" href="#">Contact Office</a>
+								<a class="dropdown-item" href="#!contactepfo">Contact Office</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Communicate</a>
+							<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Communicate</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Grievances</a>
-								<a class="dropdown-item" href="#">Information to Office</a>
-								<a class="dropdown-item" href="#">Contact Office</a>
+								<a class="dropdown-item" href="#!grievances">Grievances</a>
+								<a class="dropdown-item" href="#!information">Information to Office</a>
+								<a class="dropdown-item" href="#!contactepfo">Contact Office</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="#!profile">Guides</a></li>
-						<li class="nav-item"><a class="nav-link" href="#!elg">Notifications</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!guides">Guides</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!notifications">Notifications</a></li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -240,6 +240,26 @@ app.config(function($routeProvider) {
 	.when("/viewpp", {
         templateUrl : "viewpp.html",
         controller : "viewppCtrl"
+    })
+	.when("/contactepfo", {
+        templateUrl : "contactepfo.html",
+        controller : "contactepfoCtrl"
+    })
+	.when("/grievances", {
+        templateUrl : "grievances.html",
+        controller : "grievancesCtrl"
+    })
+	.when("/information", {
+        templateUrl : "information.html",
+        controller : "informationCtrl"
+    })
+	.when("/guides", {
+        templateUrl : "guides.html",
+        controller : "guidesCtrl"
+    })
+	.when("/notifications", {
+        templateUrl : "notifications.html",
+        controller : "notificationsCtrl"
     });
 });
 
@@ -268,6 +288,11 @@ app.controller("coccenCtrl", function ($scope) { $scope.msg = "COC Cancellation"
 app.controller("totreqCtrl", function ($scope) { $scope.msg = "Totalization Request"; });
 app.controller("viewppoCtrl", function ($scope) { $scope.msg = "View PPO"; });
 app.controller("viewppCtrl", function ($scope) { $scope.msg = "VIew Pensioners passbook"; });
+app.controller("contactepfoCtrl", function ($scope) { $scope.msg = "Contact Office"; });
+app.controller("grievancesCtrl", function ($scope) { $scope.msg = "Grievances"; });
+app.controller("informationCtrl", function ($scope) { $scope.msg = "Provide Information to office"; });
+app.controller("guidesCtrl", function ($scope) { $scope.msg = "Guides"; });
+app.controller("notificationsCtrl", function ($scope) { $scope.msg = "Notifications"; });
 
 
 
