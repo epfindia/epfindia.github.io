@@ -149,9 +149,9 @@ app.config(function($routeProvider) {
         templateUrl : "profile.html",
         controller : "profileCtrl"
     })
-	.when("/eligibilty", {
-        templateUrl : "eligibilty.html",
-        controller : "eligibiltyCtrl"
+	.when("/eligibility", {
+        templateUrl : "eligibility.html",
+        controller : "eligibilityCtrl"
     })
 	.when("/basic", {
         templateUrl : "basic.html",
@@ -245,7 +245,7 @@ app.config(function($routeProvider) {
 
 app.controller("homCtrl", function ($scope) { $scope.msg = "Home"; });
 app.controller("profileCtrl", function ($scope) { $scope.msg = "Profile"; });
-app.controller("eligibiltyCtrl", function ($scope) { $scope.msg = "Eligibility"; });
+app.controller("eligibilityCtrl", function ($scope) { $scope.msg = "Eligibility"; });
 app.controller("basicCtrl", function ($scope) { $scope.msg = "Basic Details Change"; });
 app.controller("kycCtrl", function ($scope) { $scope.msg = "KYC Change"; });
 app.controller("nominationCtrl", function ($scope) { $scope.msg = "E-nomination Change"; });
