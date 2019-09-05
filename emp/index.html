@@ -37,15 +37,113 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarColor01">
 					<ul class="navbar-nav mr-auto">
+						
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+						<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+				<a class="navbar-brand" href="#">EPFO</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarColor01">
+					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="#!rr">Return and Remittance</a></li>
-						<li class="nav-item"><a class="nav-link" href="#!mem">Membership</a></li>
-						<li class="nav-item"><a class="nav-link" href="#!cpe">Contrator and Principle Employer</a></li>
-						<li class="nav-item"><a class="nav-link" href="#!not">Notices</a></li>
-						<li class="nav-item"><a class="nav-link" href="#!cir">Circulars</a></li>
-						<li class="nav-item"><a class="nav-link" href="#!gnm">Guides & Manuals</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!clm">Claim</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!elg">eligibility</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Establishment</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#!/">View/Edit Profile</a>
+								<a class="dropdown-item" href="#!information">Exempted Returns</a>
+								<a class="dropdown-item" href="#!contactepfo">Form 2-A (Branches) </a>
+								<a class="dropdown-item" href="#!contactepfo">Form 5-A</a>
+								<a class="dropdown-item" href="#!contactepfo">Member Location Mapping</a>
+								<a class="dropdown-item" href="#!contactepfo">Authorised Signatories</a>
+								<a class="dropdown-item" href="#!contactepfo">DSC/E-sign</a>
+								<a class="dropdown-item" href="#!contactepfo">Upload Missing Documents</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tasks</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#!grievances">UAN Generation</a>
+								<a class="dropdown-item" href="#!information">UAN Linking/merger</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Approvals/Pendency</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#!contactepfo">Missing Details</a>
+								<a class="dropdown-item" href="#!contactepfo">DOE Updation</a>
+								<a class="dropdown-item" href="#!contactepfo">KYC Verification</a>
+								<a class="dropdown-item" href="#!contactepfo">Basic Details Aprroval</a>
+								<a class="dropdown-item" href="#!contactepfo">IW <-> DW</a>
+								<a class="dropdown-item" href="#!contactepfo">Totalization Requests</a>
+								<a class="dropdown-item" href="#!contactepfo">COC</a>
+								<a class="dropdown-item" href="#!contactepfo">Transfer Claims</a>
+								<a class="dropdown-item" href="#!contactepfo">Stop Auto Transfer requests</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#!contactepfo">Exempted to Unexempted PF Transfer</a>
+								<a class="dropdown-item" href="#!contactepfo">Online Filing of Death Claims</a>
+								<div class="dropdown-divider">Pay Damages/Interest</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Payments</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#!rr">Regular Return</a>
+								<a class="dropdown-item" href="#!cpe">Supplimentary Return</a>
+								<a class="dropdown-item" href="#!cpe">Revision Return</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#!not">Payment Against Return</a>	
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboards</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#!rr">Return and Remittance</a>
+								<a class="dropdown-item" href="#!mem">Membership</a>
+								<a class="dropdown-item" href="#!cpe">Contrator and Principle Employer</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#!not">Pendency Dashboard</a>
+								<a class="dropdown-item" href="#!cir">Member Profile & Service</a>
+								<a class="dropdown-item" href="#!gnm">Members Completing 58 Years</a>
+								<a class="dropdown-item" href="#!clm">PMRPY Deregistered Members</a>
+								<a class="dropdown-item" href="#!elg">E-Nomination Dashboard</a>
+								<a class="dropdown-item" href="#!not">Annexure K</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#!not">PDF- Pending Cases</a>
+								
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#!rr">Return and Remittance</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#!not">Notices</a>
+								<a class="dropdown-item" href="#!cir">Circulars</a>
+								<a class="dropdown-item" href="#!gnm">Guides & Manuals</a>
+								<a class="dropdown-item" href="#!clm">Claim</a>
+								<a class="dropdown-item" href="#!elg">eligibility</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#!not">Download PDFs</a>
+								<a class="dropdown-item" href="#!not">Notices</a>
+								<a class="dropdown-item" href="#!guides">Guides</a>
+								<a class="dropdown-item" href="#!notifications">Notifications</a>
+								
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Profile</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#!rr">My profile</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#!not">Change Password</a>
+								<a class="dropdown-item" href="#!cir">User Manager</a>								
+							</div>
+						</li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="text" placeholder="Search">
