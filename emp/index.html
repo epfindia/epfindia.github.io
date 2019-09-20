@@ -56,7 +56,7 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Establishment</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#!/">View/Edit Profile</a>
+								<a class="dropdown-item" href="#!/profile">View/Edit Profile</a>
 								<a class="dropdown-item" href="#!information">Exempted Returns</a>
 								<a class="dropdown-item" href="#!contactepfo">Form 2-A (Branches) </a>
 								<a class="dropdown-item" href="#!contactepfo">Form 5-A</a>
@@ -166,7 +166,7 @@
 			<div class="row">
 			  <div class="col-sm-9">
 				<p style="margin-top: 14px; color:#fff;">
-				  Copyrights © All Rights Reserved by <a class="alert" href="#">Company</a>
+				  Copyrights © All Rights Reserved by <a class="alert" href="#">EPFO</a>
 				</p>
 			  </div>
 			</div>
@@ -182,9 +182,9 @@ app.config(function($routeProvider) {
         templateUrl : "home.html",
         controller : "homCtrl"
     })
-    .when("/london", {
-        templateUrl : "london.htm",
-        controller : "londonCtrl"
+    .when("/profile", {
+        templateUrl : "profile.htm",
+        controller : "profileCtrl"
     })
     .when("/paris", {
         templateUrl : "paris.htm",
@@ -273,8 +273,8 @@ app.controller('rrCtrl', ['$scope','$cookies','$cookieStore', '$http', function(
 	});
 }]);
 
-app.controller("memCtrl", function ($scope) {
-    $scope.msg = "showing mem";
+app.controller("profileCtrl", function ($scope) {
+    $scope.msg = "showing Profile";
 });
 
 app.controller("cpeCtrl", function ($scope) {
