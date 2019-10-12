@@ -34,19 +34,19 @@
                 <tr>
                 <th class="col-md-4" >Name</th>
 		<th class="col-md-2">Office</th>
-		<th class="col-md-1">DESIGNATION</th>
-		<th class="col-md-2">Email</th>
+		<th class="col-md-1">STD</th>
 		<th class="col-md-2">Contact</th>
+		<th class="col-md-2">Other</th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr ng-repeat="x in offices | filter:test">
-                    <td>{{x.OFFICER_NAME}}</td>
-		    <td>{{x.OFFICE_OF_POSTING}}</td>
-		    <td>{{x.DESIGNATION}}</td>
-		    <td>{{x.EMAIL}}</td>
-			<td style="max-width:20%;">{{x.PHONE_NO}}</td>
+                    <td>{{x.Name}}</td>
+		    <td>{{x.office}}</td>
+		    <td>{{x.STD}}</td>
+		    <td style="width:20%;">{{x.Contact}}</td>
+		    <td>{{x.Other}}</td>
                   </tr>
               </tbody>
             </table>
@@ -54,19 +54,15 @@
 </div>
 </div>
 <script type="text/javascript">
-
 //<![CDATA[
-
   var app = angular.module('myApp', ['ngCookies']);
   app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
                                  $scope.names = [];
-								let url = new URL(window.location);
-								let searchParams = new URLSearchParams(url.search);
-                                 $scope.test=searchParams.get('q');
+                                 $scope.test='';
 
                                  $http({
                                    method: 'GET',
-                                   url: 'contacts2.json'
+                                   url: 'contacts.json'
                                  }).then(function (success){
                                    $scope.offices = success.data;
                                  },function (error){
@@ -75,7 +71,7 @@
                                }]);
   //]]>
   </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36392471-2"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36392471-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
