@@ -31,20 +31,10 @@
             "text":"E-court Website",
             "tags":["APFC","RPFC","COMP"]
          },
-         {
-            "link":"https://hr.epfindia.gov.in/HRM/",
-            "text":"SGHS",
-            "tags":["APFC"]
-         },
          
          {
             "link":"https://sparrow-epfo.eoffice.gov.in/SPARROWEPFO/LoginPage.action",
             "text":"Sparrow",
-            "tags":["APFC","RPFC"]
-         },
-      {
-            "link":"https://iwu.epfoservices.com:8176/epfo/",
-            "text":"Compliance MIS",
             "tags":["APFC","RPFC"]
          },
          {
@@ -131,7 +121,7 @@
          },
          {
             "link":"http://10.1.1.63:8080/Form9DashBoard/",
-            "text":"Form 9 Dashboard(internal)",
+            "text":"Form 9 Dashboard(internal/MPLS)",
             "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
@@ -145,18 +135,8 @@
             "tags":["APFC","RPFC","ACC","COMP"]
          },
          {
-            "link":"https://mis.epfindia.gov.in/prtest_old/Claims.jsp",
-            "text":"Dashboard Claims",
-            "tags":["APFC","RPFC","ACC","ACCOUNTS"]
-         },
-         {
             "link":"https://iwu.epfindia.gov.in/eKYC/",
             "text":"E-KYC Portal",
-            "tags":["APFC","RPFC","ACC"]
-         },
-         {
-            "link":"https://mis.epfindia.gov.in/memsum.html",
-            "text":"Name change Dashboard",
             "tags":["APFC","RPFC","ACC"]
          }
       ]
@@ -216,7 +196,7 @@
             "tags":["APFC", "EMPLOYEE"]
          },
          {
-            "link":"https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp",
+            "link":"https://passbook.epfindia.gov.in/MemberPassBook/Login",
             "text":"Passbook",
             "tags":["APFC", "EMPLOYEE"]
          },
@@ -228,11 +208,6 @@
          {
             "link":"https://www.epfindia.gov.in/site_en/KYCS.php",
             "text":"Claim Status(Member Id)",
-            "tags":["APFC", "EMPLOYEE"]
-         },
-         {
-            "link":"https://mis.epfindia.gov.in/INOPHelpDesk/",
-            "text":"Inoperative Helpdesk",
             "tags":["APFC", "EMPLOYEE"]
          },
          {
