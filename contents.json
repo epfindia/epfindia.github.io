@@ -88,11 +88,6 @@
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"https://aadhaar.epfoservices.com:8080/EPFOWeb/",
-            "text":"Aadhaar Seeding",
-            "tags":["APFC","COMP","RPFC","ACC"]
-         },
-         {
             "link":"https://mail.gov.in",
             "text":"NIC Mail Website",
             "tags":["APFC"]
@@ -108,7 +103,7 @@
             "tags":["APFC","RPFC","ACC"]
          },
          {
-            "link":"https://hr.epfoservices.com/hrm/",
+            "link":"https://hr.epfindia.gov.in/hrm/login.aspx",
             "text":"HRM Website",
             "tags":["APFC"]
          },
