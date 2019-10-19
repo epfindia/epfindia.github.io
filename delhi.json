@@ -1460,7 +1460,7 @@
 603209,
 603210,
 603308]},{
-	"office":"Delhi -1",
+	"office":"Delhi -1 (North)",
 	"pincodes"  : [0,
 110002,
 110005,
@@ -1507,7 +1507,7 @@
 201001,
 201301,
 495684]},{
-	"office":"Delhi -2",
+	"office":"Delhi -2 (South)",
 	"pincodes"  : [
 248001,
 560046,
@@ -1532,7 +1532,7 @@
 263153,
 400055,
 560037]},{
-	"office":"Delhi -3",
+	"office":"Delhi -3 (East)",
 	"pincodes"  : [
 110013,
 110014,
@@ -1556,7 +1556,7 @@
 201201,
 201303,
 301019]},{
-	"office":"Delhi -4",
+	"office":"Delhi -4 (West)",
 	"pincodes"  : [
 110010,
 110022,
@@ -1577,7 +1577,7 @@
 110075,
 110078,
 110087]},{
-	"office":"Delhi -5",
+	"office":"Delhi -5 (Central)",
 	"pincodes"  : [
 110001,
 110003,
