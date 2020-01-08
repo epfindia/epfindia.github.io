@@ -24,42 +24,36 @@
 
     <script>
 
-        $(document).ready(function () {
-            $('#dashboardTable1')
-                .DataTable({
-                    dom: 'Blrt',
-                    buttons: [
-                        'copy', 'excel', 'csv'
-                    ],
-                    columnDefs: [
-                        // Center align both header and body content of columns 1, 2 & 3
-                        { className: "dt-left", targets: [0] },
-                        {targets: "_all" , "createdCell": function(td, cellData, rowData, row, col){
-                            if (cellData < 1) {
-                                $(td).css('color', 'red')
-                            }
-                        }
-                        }
+	$(document).ready(function () {
+		$('#dashboardTable1')
+			.DataTable({
+				dom: 'Blrt',
+				buttons: ['copy', 'excel', 'csv'],
+				columnDefs: [
+					// Center align both header and body content of columns 1, 2 & 3
+					{ className: "dt-left", targets: [0] },
+					{targets: "_all" , "createdCell": function(td, cellData, rowData, row, col){
+						if (cellData < 1) {
+							$(td).css('color', 'red')
+						}
+					}
+				}],
+				"lengthMenu": [[25, -1], [25, "All"]],
+				paging: false,
+				autowidth: true,
+				"scrollY": "45vh",
+				"scrollCollapse": true,
+				scrollX: true,
+				fixedColumns: {
+					leftColumns: 1
+				}
+			});
 
-
-                    ],
-                    "lengthMenu": [[25, -1], [25, "All"]],
-                    paging: false,
-                    autowidth: true,
-                    "scrollY": "45vh",
-                    "scrollCollapse": true,
-                    scrollX: true,
-                    fixedColumns: {
-                        leftColumns: 1
-                    }
-
-                });
-            
-            $('#dashboardTable1').DataTable().draw();
-            var table = $('#dashboardTable1').DataTable();
+			$('#dashboardTable1').DataTable().draw();
+			var table = $('#dashboardTable1').DataTable();
            
 
-            $('#dashboardTable1 tbody')
+			$('#dashboardTable1 tbody')
                 .on('mouseenter', 'td', function () {
                     var colIdx = table.cell(this).index().column;
                     $(table.cells().nodes()).removeClass('highlight');
