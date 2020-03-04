@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<style>
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="./js/Chart.min.js"></script>
+	<script src="./js/utils.js"></script>
+		<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+
+<body ng-app="myApp">
+<div class="jumbotron">
+<div class="row w-100">
+        <div class="col-md-3">
+            <div class="card border-info mx-sm-1 p-1">
+                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
+                <a href="#!est" id="randomizeData" class="text-info text-center mt-3"><h4>Estbalishments</h4></a>
+                <div class="text-info text-center mt-2"><h1>6,57,777</h1></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-1">
+                <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-users" aria-hidden="true"></span></div>
+                <a href="#!mem" id="randomizeData2" class="text-success text-center mt-3"><h4>Members</h4></a>
+                <div class="text-success text-center mt-2"><h1>5,55,67,456</h1></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-1">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-user" aria-hidden="true"></span></div>
+                <a href="#!pen" id="randomizeData3" class="text-danger text-center mt-3"><h4>Pensioners</h4></a>
+                <div class="text-danger text-center mt-2"><h1>6,65,6000</h1></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-warning mx-sm-1 p-1">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span></div>
+                <a href="#!/claim" id="randomizeData4" class="text-warning text-center mt-3"><h4>Claims</h4></a>
+                <div class="text-warning text-center mt-2"><h1>1,65,45,234</h1></div>
+            </div>
+        </div>
+     </div>
+</div>	
+</div>
+<div ng-view></div>
+
+<div id="canvas-holder" style="width:40%">
+		<canvas id="chart-area"></canvas>
+	</div>
+	<!--<button id="randomizeData">Randomize Data</button>
+	<button id="addDataset">Add Dataset</button>
+	<button id="removeDataset">Remove Dataset</button>
+	<button id="addData">Add Data</button>
+	<button id="removeData">Remove Data</button>
+	<button id="changeCircleSize">Semi/Full Circle</button>
+	-->
+	<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.orange,
+						window.chartColors.yellow,
+						window.chartColors.green,
+						window.chartColors.blue,
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Red',
+					'Orange',
+					'Yellow',
+					'Green',
+					'Blue'
+				]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'top',
+				},
+				title: {
+					display: true,
+					text: 'Chart.js Doughnut Chart'
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('chart-area').getContext('2d');
+			window.myDoughnut = new Chart(ctx, config);
+		};
+
+		var updateChart = function() {
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+			});
+
+			window.myDoughnut.update();
+		};
+		document.getElementById('randomizeData').addEventListener('click', updateChart);
+		document.getElementById('randomizeData2').addEventListener('click', updateChart);
+		document.getElementById('randomizeData3').addEventListener('click', updateChart);
+		document.getElementById('randomizeData4').addEventListener('click', updateChart);
+
+		var colorNames = Object.keys(window.chartColors);
+		document.getElementById('addDataset').addEventListener('click', function() {
+			var newDataset = {
+				backgroundColor: [],
+				data: [],
+				label: 'New dataset ' + config.data.datasets.length,
+			};
+
+			for (var index = 0; index < config.data.labels.length; ++index) {
+				newDataset.data.push(randomScalingFactor());
+
+				var colorName = colorNames[index % colorNames.length];
+				var newColor = window.chartColors[colorName];
+				newDataset.backgroundColor.push(newColor);
+			}
+
+			config.data.datasets.push(newDataset);
+			window.myDoughnut.update();
+		});
+
+		document.getElementById('addData').addEventListener('click', function() {
+			if (config.data.datasets.length > 0) {
+				config.data.labels.push('data #' + config.data.labels.length);
+
+				var colorName = colorNames[config.data.datasets[0].data.length % colorNames.length];
+				var newColor = window.chartColors[colorName];
+
+				config.data.datasets.forEach(function(dataset) {
+					dataset.data.push(randomScalingFactor());
+					dataset.backgroundColor.push(newColor);
+				});
+
+				window.myDoughnut.update();
+			}
+		});
+
+		document.getElementById('removeDataset').addEventListener('click', function() {
+			config.data.datasets.splice(0, 1);
+			window.myDoughnut.update();
+		});
+
+		document.getElementById('removeData').addEventListener('click', function() {
+			config.data.labels.splice(-1, 1); // remove the label first
+
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data.pop();
+				dataset.backgroundColor.pop();
+			});
+
+			window.myDoughnut.update();
+		});
+
+		document.getElementById('changeCircleSize').addEventListener('click', function() {
+			if (window.myDoughnut.options.circumference === Math.PI) {
+				window.myDoughnut.options.circumference = 2 * Math.PI;
+				window.myDoughnut.options.rotation = -Math.PI / 2;
+			} else {
+				window.myDoughnut.options.circumference = Math.PI;
+				window.myDoughnut.options.rotation = -Math.PI;
+			}
+
+			window.myDoughnut.update();
+		});
+	</script>
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "pages/home.html",
+        controller : "claimCtrl"
+    })
+    .when("/est", {
+        templateUrl : "pages/home.html",
+        controller : "estCtrl"
+    })
+    .when("/mem", {
+        templateUrl : "pages/home.html",
+        controller : "memCtrl"
+    })
+	.when("/pen", {
+        templateUrl : "pages/home.html",
+        controller : "penCtrl"
+    })
+	.when("/claim", {
+        templateUrl : "pages/home.html",
+        controller : "claimCtrl"
+    })
+	.otherwise({
+    template : "<h1>None</h1><p>Nothing has been selected</p>"
+  });;
+});
+app.controller("claimCtrl", function ($scope) {
+    $scope.msg = "Claims";
+	
+});
+app.controller("penCtrl", function ($scope) {
+    $scope.msg = "Pensioners";
+});
+app.controller("memCtrl", function ($scope) {
+    $scope.msg = "Members";
+});
+app.controller("estCtrl", function ($scope) {
+    $scope.msg = "Establishments";
+});
+
+	
+
+// Shorthand for $( document ).ready()
+$(function() {
+    
+});
+</script>
+
+</body>
+</html>
