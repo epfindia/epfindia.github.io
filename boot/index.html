@@ -42,6 +42,10 @@
 			color:#E60000;
 			font-size:180%;
 		}
+		
+		.breadcrumb {
+    padding: 2px 15px !important;
+}
 
 		</style>
 	</head>
@@ -90,7 +94,7 @@
 		</nav>
 		
 		<!-- Start -->
-		<div class="container bg-light">
+		<div class="container bg-light shadow">
 			<div class="row">
 				<div class="emblem col-sm-12 text-center col-md-1 order-md-3 float-right text-md-right">
 					<a href="index.php"><img src="images/nationalemblem1.png" id="epf_img1" alt="National Emblem"></a>
@@ -149,6 +153,13 @@
 						</div><!-- collapse -->
 					</div><!-- container -->
 				</nav>
+				
+			</div>
+			<div class="row">
+				<nav class="col breadcrumb">
+					<a class="breadcrumb-item" href="#">Home</a>
+					<a class="breadcrumb-item active" href="#">Our Services</a>
+				</nav>
 			</div>
 			<div class="row">
 				<div class="col-sm-12 col-md-8">
@@ -184,17 +195,30 @@
 				</div>
 		</div>
 		<h3 class="row bg-warning mb-0 p-2">Vision <span class="badge badge-danger badge-pill ">new</span></h3>
-		<div class="row bg-light">
-			<section class="content col">
-				<img class="sample img-fluid" src="images/image.png" alt="sample image">
-				<h4>General Health</h4>
-				<p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
-			</section>
-			<div class="list-group list-group-flush">
-          <a class="list-group-item list-group-item-action" href="#">About Me</a>
-          <a class="list-group-item list-group-item-action" href="#">My Pets</a>
-          <a class="list-group-item list-group-item-action" href="#">Client Slideshow</a>
+		<div class="row">
+			<div class="col list-group list-group-flush p-0">
+          <a class="list-group-item list-group-item-action active" href="#">About</a>
+          <a class="list-group-item list-group-item-action list-group-item-success d-flex justify-content-between align-items-center" href="#">Servces <span class="badge badge-danger badge-pill ">new</span></a>
+          <a class="list-group-item list-group-item-action list-group-item-warning" href="#">For Employer</a>
         </div>
+		</div>
+		<div class="row card-group">
+		<div class="card col-3 p-0">
+  <img src="images/image.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Go somewhere</a>
+  </div>
+</div>
+<div class="card col-3 p-0">
+  <img src="images/image.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Go somewhere</a>
+  </div>
+</div>
 		</div>
 	</div>
 		<!-- end -->
