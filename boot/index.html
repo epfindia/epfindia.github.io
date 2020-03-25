@@ -53,6 +53,15 @@
 			padding: 2px 15px !important;
 			margin-bottom:0px;
 }
+#accordionExample .show{
+height:200px;
+overflow-y:scroll;
+}
+
+#accordionRight .show {
+	min-height:400px;
+	overflow-y:scroll;
+}
 
 		</style>
 	</head>
@@ -105,7 +114,6 @@
 				</div>
 			</div>
 		</nav>
-		
 		<!-- Start -->
 		<div class="container bg-light shadow">
 			<div class="row pt-2">
@@ -194,7 +202,7 @@
 										<a class="dropdown-item" href="https://twitter.com/santoshgangwar">Twitter Handle of LEM</a>
 										<a class="dropdown-item" href="../site_docs/PDFs/MiscPDFs/EPS1995_PensionDisbursingAgenciesList.pdf">EPS 1995 - List of Pension Disbursing Banks</a>
 										<a class="dropdown-item" href="http://www.hudco.org/writereaddata/Niwasoffice.pdf">List of HUDCO Niwas Offices</a>
-										<a class="dropdown-item" href="http://hudco.org/writereaddata/PMAY.pdf">Pradhan Mantri Awas Yojana, Credit Linked Subsidy Scheme (CLSS)</a></ul>
+										<a class="dropdown-item" href="http://hudco.org/writereaddata/PMAY.pdf">Pradhan Mantri Awas Yojana, Credit Linked Subsidy Scheme (CLSS)</a>
 									</div>
 								</div>
 								<a class="nav-item nav-link" href="#">Who's Who</a>
@@ -259,43 +267,153 @@
 				<div class="col-sm-12 col-md-4">
 						<img class="sample img-fluid" src="images/image.png" alt="sample image">
 				</div>
-		</div>
-		<div class="row">
-			<div class="col list-group list-group-flush p-0 d-none">
-          <a class="list-group-item list-group-item-action active" href="#">About</a>
-          <a class="list-group-item list-group-item-action list-group-item-success d-flex justify-content-between align-items-center" href="#">Servces <span class="badge badge-danger badge-pill ">new</span></a>
-          <a class="list-group-item list-group-item-action list-group-item-warning" href="#">For Employer</a>
-        </div>
-		</div>
-		<div class="row card-group">
-		<div class="card col-3 p-0">
-  <img src="images/image.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Go somewhere</a>
-  </div>
+			</div>
+			<div class="row d-none">
+				<div class="col list-group list-group-flush p-0">
+					<a class="list-group-item list-group-item-action active" href="#">About</a>
+					<a class="list-group-item list-group-item-action list-group-item-success d-flex justify-content-between align-items-center" href="#">Servces <span class="badge badge-danger badge-pill ">new</span></a>
+					<a class="list-group-item list-group-item-action list-group-item-warning" href="#">For Employer</a>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-6 px-0">
+					<div class="col-12 mb-3">
+										<div class="accordion" id="accordionServices">
+						  <div class="card">
+							<div class="card-header p-0" id="headingOne">
+								<button class="btn btn-link d-flex list-group-item-action" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								  For Employees
+								</button>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionServices">
+							  <div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							  </div>
+							</div>
+						  </div>
+						  <div class="card">
+							<div class="card-header p-0" id="headingTwo">
+								<button class="btn btn-link list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								  For Employers
+								  </button>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionServices">
+							  <div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							  </div>
+							</div>
+						  </div>
+						  <div class="card">
+							<div class="card-header p-0" id="headingThree">
+								<button class="btn btn-link list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								  For Pensioners
+								</button>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionServices">
+							  <div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							  </div>
+							</div>
+						  </div>
+						  
+					</div>
+				
+					</div>
+					<div class="col-12 mb-3">
+						<div class="card">
+							<div class="card-header bg-info"> What's New</div>
+							<div class="card-body p-2" style="max-height:200px;overflow-y:scroll;">
+								<ul class="list-group">
+									<li class="list-group-item p-2">Extension of last date for submission of Applications - Head Office, New Delhi.... <a href="../site_docs/PDFs/Updates/Empanelment_Advocate_HeadOffice_032019.pdf" target="_blank">Read</a></li>
+									<li class="list-group-item p-2">Notice Inviting Applications for Empanelment.... <a href="../site_docs/PDFs/Updates/Empanelment_Advocate_Jalandhar_032019.pdf" target="_blank">Read</a></li>
+									<li class="list-group-item p-2">Empanelment of Advocates for the.... <a href="../site_docs/PDFs/Updates/Selection_Advocates_DLUK_022019_1528.pdf" target="_blank">Read</a></li>
+									<li class="list-group-item p-2">Notice Inviting Application for .... <a href="../site_docs/PDFs/Updates/Surat_Empanelment_Advocates_022019.pdf" target="_blank">Read</a></li>
+									<li class="list-group-item p-2">Notice Inviting Applications for Empanelment.... <a href="../site_docs/PDFs/Updates/Empanelment_Advocate_uttarpradesh_022019.pdf" target="_blank">Read</a></li>
+									<li class="list-group-item p-2">Interaction/Interview for Selection for the Empanelment.... <a href="../site_docs/PDFs/Updates/Selection_Advocates_DLUK_022019_1437.pdf" target="_blank">Read</a></li>
+									<li class="list-group-item p-2">Notice Inviting Applications for Empanel.... <a href="../site_docs/PDFs/Updates/EmpanelmentAdvocate_Vijayawada_568_022019.pdf.pdf" target="_blank">Read</a></li>
+									<li class="list-group-item p-2">Notice Inviting Applications for Empanel.... <a href="../site_docs/PDFs/Updates/EmpanelmentAdvocate_SCND_012019.pdf" target="_blank">Read</a></li>
+									<li class="list-group-item p-2">Interview for Empanel.... <a href="../site_docs/PDFs/Updates/EmpanelmentAdvocate_DLUK_1321.pdf" target="_blank">Read</a></li>
+</ul>
+							</div>
+							<div class="card-footer">
+								<a class="card-link" href="#">More...</a>
+							</div>
+						</div>
 </div>
-<div class="card col-3 p-0">
-  <img src="images/image.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Go somewhere</a>
-  </div>
-</div>
+				</div>
+				<div class="col-md-6">
+					<div class="accordion" id="accordionRight">
+						  <div class="card">
+							<div class="card-header p-0" id="heading1">
+								<button class="btn btn-link list-group-item-action" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+								  About Us
+								</button>
+							</div>
+
+							<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionRight">
+							  <div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							  </div>
+							</div>
+						  </div>
+						  <div class="card">
+							<div class="card-header p-0" id="heading2">
+								<button class="btn btn-link list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+								  Vision
+								  </button>
+							</div>
+							<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionRight">
+							  <div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							  </div>
+							</div>
+						  </div>
+						  <div class="card">
+							<div class="card-header p-0" id="heading3">
+								<button class="btn btn-link list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+								  Mission
+								</button>
+							</div>
+							<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionRight">
+							  <div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							  </div>
+							</div>
+						  </div>
+						  <div class="card">
+							<div class="card-header p-0" id="heading4">
+								<button class="btn btn-link list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+								  67th Foundation Day
+								</button>
+							</div>
+							<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionRight">
+							  <div class="card-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							  </div>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<button type="button" class="col m-2 btn btn-primary">Employers Portal</button>
+				<button type="button" class="col m-2 btn btn-secondary">Pradhan Mantri Rojgar Protsahan Yojna</button>
+				<button type="button" class="col m-2 btn btn-success">m-Governance</button>
+				<button type="button" class="col m-2 btn btn-info">EPFO's Press Release</button>'
+				<button type="button" class="col m-2 btn btn-warning">Photo Gallery</button>
+			</div>
 		</div>
-	</div>
 	<!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4 text-white bg-danger">
+<footer class="page-footer font-small mdb-color text-white bg-danger">
 	<!-- Footer Links -->
 	<div class="container text-center text-md-left">
+		
 
-		<!-- Footer links -->
-		<div class="row text-center text-md-left mt-3 pb-3">
+		<div class="row text-center text-md-left mt-3 pb-3 d-none">
 
 			<!-- Grid column -->
-			<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+			<div class="col-md-3 col-lg-3 col-xl-3 mx-auto ">
 				<h6 class="text-uppercase mb-4 font-weight-bold">Employees' Provident Fund Organisation</h6>
 				<!-- Social buttons -->
 				<div class="text-center text-md-left">
@@ -310,7 +428,7 @@
 		<hr class="w-100 clearfix d-md-none">
 
 		<!-- Grid column -->
-		<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+		<div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
 			<h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
 			<p><a href="#!">For Employees</a></p>
 			<p><a href="#!">For Employers</a></p>
@@ -349,7 +467,21 @@
 
 	</div>
 	<!-- Footer links -->
-
+	<hr>
+			<!-- Footer links -->
+		<div class="row d-flex text-right">
+				<nav class="breadcrumb float-right bg-danger">
+					<a class="breadcrumb-item" href="index.php">Home </a>
+					<a class="breadcrumb-item" href="Contact_us.php">Contact Us </a>
+					<a class="breadcrumb-item" href="SiteMap.php">Sitemap </a>
+					<a class="breadcrumb-item" href="Disclaimer.php">Disclaimer</a> 
+					<a class="breadcrumb-item" href="Copyright.php">Copyright Policy</a>
+					<a class="breadcrumb-item" href="Hyperlinking_Policy.php">Hyperlinking Policy </a> 
+					<a class="breadcrumb-item" href="Terms_Of_Use.php">Terms Of Use </a>
+					<a class="breadcrumb-item" href="Feedback.php"> Feedback</a>
+					<a class="breadcrumb-item" href="Privacy_Policy.php"> Privacy Policy</a>
+				</nav>
+			</div>
     <hr>
 
     <!-- Grid row -->
@@ -358,7 +490,7 @@
 		<!-- Grid column -->
 		<div class="col-md-5">
 			<!--Copyright-->
-			<p class="text-center text-md-left">© 2020 Copyright:<a href="https://epfindia.gov.in/"><strong>Employees' Provident Fund Organisation</strong></a></p>
+			<p class="text-center text-md-left">© 2020 Copyright: <a href="https://epfindia.gov.in/"><strong>Employees' Provident Fund Organisation</strong></a></p>
 		</div>
 		
 		<!-- Grid column -->
