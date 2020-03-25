@@ -41,15 +41,22 @@
 		#epfo {
 			color:#E60000;
 			font-size:180%;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-weight:bold;
+		}
+		
+		#goi {
+			font-family:Georgia, "Times New Roman", Times, serif;
 		}
 		
 		.breadcrumb {
-    padding: 2px 15px !important;
+			padding: 2px 15px !important;
+			margin-bottom:0px;
 }
 
 		</style>
 	</head>
-	<body>
+	<body class="bg-light">
 		<nav class="navbar navbar-dark py-0 bg-danger navbar-expand-lg py-md-0">
 		
 			<button class="navbar-toggler mt-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,8 +83,14 @@
 					
 					</div>
 				</div>
-				<div class="col-4 text-right">
 				
+				<div class="col-4 text-right">
+				<ul class="navbar-nav ml-md-auto text-right float-right">
+					<li class="nav-item"><a class="nav-link text-white p-1" href="https://twitter.com/socialepfo/" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+					<li class="nav-item"><a class="nav-link text-white p-1" href="https://www.facebook.com/socialepfo/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>		
+					<li class="nav-item"><a class="nav-link text-white p-1" href="https://epfindia.gov.in/site_en/help.php" target="_blank"><i class="fab fa-question-circle fa-2x"></i></a></li>
+					
+				</ul>
 				<!--<div style="" class="img_col">
 	<a href="#middle_sec" title="Main Content" style="color:#fff">Skip to main content</a>
 	</div>
@@ -95,7 +108,7 @@
 		
 		<!-- Start -->
 		<div class="container bg-light shadow">
-			<div class="row">
+			<div class="row pt-2">
 				<div class="emblem col-sm-12 text-center col-md-1 order-md-3 float-right text-md-right">
 					<a href="index.php"><img src="images/nationalemblem1.png" id="epf_img1" alt="National Emblem"></a>
 				</div>
@@ -107,7 +120,7 @@
 					<a class="img-fluid" href="index.php"><img src="images/logo_shadow.png" alt="EPFO" title="EPFO"></a>
 				</div>
 			</div>
-			<div class="row bg-light shadow-0 pb-2">
+			<div class="row bg-light shadow-0 pb-2 d-none">
 				<div class="col text-md-right text-center" style="float:right; text-align:right;">
 					<a href="index.php"><img src="images/home1.png" class="img_icon" alt="Home" title="Home"></a>&nbsp;
 					<a href="Contact_us.php"><img src="images/contact1.png" class="img_icon" alt="Contact Us" title="Who's Who"></a>&nbsp;
@@ -122,7 +135,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<nav id="navbar-site" class="col navbar navbar-dark bg-primary navbar-expand-md">
+				<nav id="navbar-site" class="col navbar navbar-dark bg-primary navbar-expand-lg">
 					<div class="container">
 					
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav"
@@ -132,23 +145,76 @@
 						
 						<div class="collapse navbar-collapse" id="myTogglerNav">
 							<div class="navbar-nav">
-								<a class="nav-item nav-link active" href="#mission">Our services</a>
 								<div class="dropdown">
-									<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="statusDropdown" 
-									aria-haspopup="true" aria-expanded="false" href="#">Status of Establishments</a>
-									<div class="dropdown-menu" aria-labelledby="statusDropdown">
-										<a class="dropdown-item" href="#">EPFO Corner</a>
-										<a class="dropdown-item" href="#">Miscellaneous</a>
-										<a class="dropdown-item" href="#">Contact Us</a>
-										<a class="dropdown-item" href="#">PM-SYM</a>
-										<a class="dropdown-item" href="#">Help</a>
+									<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicesDropdown" aria-haspopup="true" aria-expanded="false" href="#">Our services</a>
+									<div class="dropdown-menu" aria-labelledby="servicesDropdown">
+										<a class="dropdown-item" href="#">For Employees</a>
+										<a class="dropdown-item" href="#">For Employers</a>
+										<a class="dropdown-item" href="#">For International Workers</a>
+										<a class="dropdown-item" href="#">For Pensioners</a>
+										<a class="dropdown-item" href="#">Locate an EPFO Office</a>
 									</div>
 								</div>
-								<a class="nav-item nav-link" href="#">EPFO Corner</a>
-								<a class="nav-item nav-link" href="#">Miscellaneous</a>
-								<a class="nav-item nav-link" href="#">Contact Us</a>
-								<a class="nav-item nav-link" href="#">PM-SYM</a>
-								<a class="nav-item nav-link" href="#">Help</a>
+								<div class="dropdown">
+									<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="statusDropdown" aria-haspopup="true" aria-expanded="false" href="#">Status of Establishments</a>
+									<div class="dropdown-menu" aria-labelledby="statusDropdown">
+										<a class="dropdown-item" href="#">List of Exempted Establishments</a>
+										<a class="dropdown-item" href="#">Perfor. Evaluation of Exempted Establishments</a>
+										<a class="dropdown-item" href="#">Current Defaulting Establishments</a>
+										<a class="dropdown-item" href="#">Exempted Return Manual</a>
+										<a class="dropdown-item" href="#">Provisional Monthly Estimate of Payroll</a>
+									</div>
+								</div>
+								<div class="dropdown">
+									<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="cornerDropdown" aria-haspopup="true" aria-expanded="false" href="#">EPFO Corner</a>
+									<div class="dropdown-menu" aria-labelledby="cornerDropdown">
+										<a class="dropdown-item" href="#">Chief Executive Officer</a>
+										<a class="dropdown-item" href="#">Central Govt. Industrial Tribunal</a>
+										<a class="dropdown-item" href="#">EPF Training Institutes</a>
+										<a class="dropdown-item" href="#">Dashboards</a>
+										<a class="dropdown-item" href="#">Narakas</a>
+										<a class="dropdown-item" href="#">For Office Use</a>
+									</div>
+								</div>
+								<div class="dropdown">
+									<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="miscDropdown" aria-haspopup="true" aria-expanded="false" href="#">Miscellaneous</a>
+									<div class="dropdown-menu" aria-labelledby="miscDropdown">
+										<a class="dropdown-item" href="https://pledge.cvc.nic.in/">Integrity Pledge - Central Vigilance Commission</a>
+										<a class="dropdown-item" href="http://cvc.nic.in/?q=citizens-corner/whistle-blower-complaints">Whistle Blower Policy - CVC</a>
+										<a class="dropdown-item" href="EODB.php?id=sm22_index">Ease of Doing Business</a>
+										<a class="dropdown-item" href="Downloads.php?id=sm8_index">Downloads</a>
+										<a class="dropdown-item" href="Recruitments.php?id=sm9_index">Recruitments</a>
+										<a class="dropdown-item" href="Tender_Auction.php?id=sm10_index">Tenders / Auctions</a>
+										<a class="dropdown-item" href="../site_docs/PDFs/MiscPDFs/CitizenCharter.pdf" target="_blank">Citizen's Charter</a>
+										<a class="dropdown-item" href="RTI.php?id=sm12_index">RTI Act</a>
+										<a class="dropdown-item" href="https://search.epfindia.gov.in/OperationStatistics/operational_stats_en.php">Operational Statistics</a>
+										<a class="dropdown-item" href="https://search.epfindia.gov.in/eNewsletters/eNewsletters_en.php">e - Newsletter</a>
+										<a class="dropdown-item" href="../site_docs/PDFs/MiscPDFs/UAN-BenefitsForMembers_May2016.pdf" target="_blank">UAN Presentation</a>
+										<a class="dropdown-item" href="https://www.facebook.com/santosh.gangwar/">Facebook Link of LEM</a>
+										<a class="dropdown-item" href="https://twitter.com/santoshgangwar">Twitter Handle of LEM</a>
+										<a class="dropdown-item" href="../site_docs/PDFs/MiscPDFs/EPS1995_PensionDisbursingAgenciesList.pdf">EPS 1995 - List of Pension Disbursing Banks</a>
+										<a class="dropdown-item" href="http://www.hudco.org/writereaddata/Niwasoffice.pdf">List of HUDCO Niwas Offices</a>
+										<a class="dropdown-item" href="http://hudco.org/writereaddata/PMAY.pdf">Pradhan Mantri Awas Yojana, Credit Linked Subsidy Scheme (CLSS)</a></ul>
+									</div>
+								</div>
+								<a class="nav-item nav-link" href="#">Who's Who</a>
+								<div class="dropdown">
+									<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="pmsymDropdown" aria-haspopup="true" aria-expanded="false" href="#">PM-SYM</a>
+									<div class="dropdown-menu" aria-labelledby="pmsymDropdown">
+										<a class="dropdown-item" href="#">PM-SYM Scheme</a>
+										<a class="dropdown-item" href="#">Enrollment in PM-SYM</a>
+										<a class="dropdown-item" href="#">Common Service Centres</a>
+										<a class="dropdown-item" href="#">PM-SYM FAQs</a>
+									</div>
+								</div>
+								<div class="dropdown">
+									<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="helpDropdown" aria-haspopup="true" aria-expanded="false" href="#">Help</a>
+									<div class="dropdown-menu" aria-labelledby="helpDropdown">
+										<a class="dropdown-item" href="#">Help</a>
+										<a class="dropdown-item" href="#">FAQs</a>
+										<a class="dropdown-item" href="#">Grievance Portal</a>
+									</div>
+								</div>
 							</div><!-- navbar-nav -->
 						</div><!-- collapse -->
 					</div><!-- container -->
@@ -194,9 +260,8 @@
 						<img class="sample img-fluid" src="images/image.png" alt="sample image">
 				</div>
 		</div>
-		<h3 class="row bg-warning mb-0 p-2">Vision <span class="badge badge-danger badge-pill ">new</span></h3>
 		<div class="row">
-			<div class="col list-group list-group-flush p-0">
+			<div class="col list-group list-group-flush p-0 d-none">
           <a class="list-group-item list-group-item-action active" href="#">About</a>
           <a class="list-group-item list-group-item-action list-group-item-success d-flex justify-content-between align-items-center" href="#">Servces <span class="badge badge-danger badge-pill ">new</span></a>
           <a class="list-group-item list-group-item-action list-group-item-warning" href="#">For Employer</a>
@@ -221,6 +286,101 @@
 </div>
 		</div>
 	</div>
+	<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4 text-white bg-danger">
+	<!-- Footer Links -->
+	<div class="container text-center text-md-left">
+
+		<!-- Footer links -->
+		<div class="row text-center text-md-left mt-3 pb-3">
+
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+				<h6 class="text-uppercase mb-4 font-weight-bold">Employees' Provident Fund Organisation</h6>
+				<!-- Social buttons -->
+				<div class="text-center text-md-left">
+					<ul class="list-unstyled list-inline">
+						<li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Grid column -->
+
+		<hr class="w-100 clearfix d-md-none">
+
+		<!-- Grid column -->
+		<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+			<h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+			<p><a href="#!">For Employees</a></p>
+			<p><a href="#!">For Employers</a></p>
+			<p><a href="#!">For Pensioners</a></p>
+			<p><a href="#!">For International Workers</a></p>
+		</div>
+		<!-- Grid column -->
+
+		<hr class="w-100 clearfix d-md-none">
+		<!-- Grid column -->
+		<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+			<h6 class="text-uppercase mb-4 font-weight-bold">For Office Use</h6>
+			<p><a href="#!">Dashboard</a></p>
+			<p><a href="#!">Unified Portal</a></p>
+			<p><a href="#!">NIC E-mail</a></p>
+			<p><a href="#!">HR Software</a></p>
+		</div>
+
+		<!-- Grid column -->
+		<hr class="w-100 clearfix d-md-none">
+
+		<!-- Grid column -->
+		<div class="col-md-4 mx-auto mt-3">
+			<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+			<p>
+				<i class="fas fa-home mr-3"></i> 
+				Bhavishya Nidhi Bhawan,<br/>
+				14, Bhikaiji Cama Place,<br/>
+				New Delhi - 110 066.
+			</p>
+			<p><i class="fas fa-envelope mr-3"></i>employeefeedback@epfindia.com</p>
+			<p><i class="fas fa-envelope mr-3"></i>employerfeedback@epfindia.com</p>
+			<p><i class="fas fa-phone mr-3"></i>18001 18005</p>
+		</div>
+		<!-- Grid column -->
+
+	</div>
+	<!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+		<!-- Grid column -->
+		<div class="col-md-5">
+			<!--Copyright-->
+			<p class="text-center text-md-left">© 2020 Copyright:<a href="https://epfindia.gov.in/"><strong>Employees' Provident Fund Organisation</strong></a></p>
+		</div>
+		
+		<!-- Grid column -->
+		<div class="col-md-3">
+			<!--updated-->
+			<p class="text-center">Last updated: 13-March-2020</p>
+		</div>
+		<!-- Grid column -->
+		
+		<div class="col-md-4">
+			<p class="text-center text-md-right">Visitor Count (w.e.f 06-08-2016): 515959338</p>
+		</div>
+		<!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
 		<!-- end -->
 
 		<!-- Optional JavaScript -->
