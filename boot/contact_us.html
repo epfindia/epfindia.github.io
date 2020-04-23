@@ -488,6 +488,8 @@
 						offices = success.data;
 						find_nearest_city();
 						$scope.nearest=offices[closest];
+						console.log(closest)
+						console.log($scope.nearest)
 						$scope.office={'title':offices[closest]["office_name"]}
 					},function (error){
 						console.log(error)
@@ -563,7 +565,7 @@ function NearestCity(latitude, longitude) {
 			minDif = dif;
 		}
 	}
-	console.log(offices[closest]);  
+	//console.log(offices[closest]);  
 }
 
 			});
