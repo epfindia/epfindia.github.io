@@ -272,7 +272,7 @@
 				</div>
 				<div class="row">
 					<p id="demo" class="col-12 mb-2"></p>
-					<p class="col-12 mb-2">Your Nearest City is {{nearest}}</p>
+					<p class="col-12 mb-2">Your Nearest City is <span id="demo1"></span> {{nearest}}</p>
 					<label>Search contact details of office</label>
 					<input style="height:33px" type="text" name="country" id="country" ng-model="country" ng-keyup="complete(country)" class="form-control" placeholder="Type office name here..."/>
 					<ul class="list-group">
@@ -464,6 +464,7 @@
 			var app=angular.module("myApp",[]);
 			var offices = [];
 			var x = document.getElementById("demo");
+			var y = document.getElementById("demo1");
 			app.controller('myCtrl',function($scope,$http){
 				$scope.nearest = "Test";
 				$scope.office={'title':""}
@@ -508,9 +509,14 @@
 // Callback function for asynchronous call to HTML5 geolocation
 function UserLocation(position) {
 	closest = NearestCity(position.coords.latitude, position.coords.longitude);
-	x.innerHTML = "Latitude: " + position.coords.latitude
-	  + ",<br> and the index is: "+closest; 
-	$scope.nearest=offices[closest]["office_name"];
+	x.innerHTML = "The index is: "+closest; 
+	$scope.$apply(function () {
+     $scope.nearest=offices[closest]["office_name"];
+	 $scope.office={"title": $scope.nearest};
+});
+	
+	y.innerHTML = $scope.nearest;
+	alert($scope.nearest);
 }
 
 // Convert Degress to Radians
