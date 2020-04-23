@@ -463,6 +463,7 @@
 		<script>
 			var app=angular.module("myApp",[]);
 			var offices = [];
+			var minDif = 9999999999;
 			var x = document.getElementById("demo");
 			closest = 1;
 			app.controller('myCtrl',function($scope,$http){
@@ -526,7 +527,7 @@
 function UserLocation(position) {
 	NearestCity(position.coords.latitude, position.coords.longitude);
 	x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude; 
+  "<br>Longitude: " + position.coords.longitude + ",<br> and the diff is"+minDif; 
 }
 
 // Convert Degress to Radians
@@ -550,7 +551,6 @@ function PythagorasEquirectangular(lat1, lon1, lat2, lon2) {
 
 
 function NearestCity(latitude, longitude) {
-	var minDif = 99999;
 	//var closest;
 
 	for (index = 0; index < offices.length; ++index) {
@@ -561,7 +561,6 @@ function NearestCity(latitude, longitude) {
 			minDif = dif;
 		}
 	}
-	alert(mindif);
 	console.log(offices[closest]);  
 }
 
