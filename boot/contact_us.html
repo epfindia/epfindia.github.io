@@ -464,7 +464,7 @@
 			var app=angular.module("myApp",[]);
 			var offices = [];
 			var x = document.getElementById("demo");
-			closest = 0;
+			closest = 1;
 			app.controller('myCtrl',function($scope,$http){
 				$scope.nearest = {
 					"office_name":"Delhi",
@@ -545,6 +545,9 @@ function PythagorasEquirectangular(lat1, lon1, lat2, lon2) {
 	var d = Math.sqrt(x * x + y * y) * R;
 	return d;
 }
+
+
+
 
 function NearestCity(latitude, longitude) {
 	var minDif = 99999;
