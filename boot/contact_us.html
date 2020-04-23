@@ -508,8 +508,7 @@
 // Callback function for asynchronous call to HTML5 geolocation
 function UserLocation(position) {
 	closest = NearestCity(position.coords.latitude, position.coords.longitude);
-	x.innerHTML = "Latitude: " + position.coords.latitude +
-	  "<br>Longitude: " + position.coords.longitude 
+	x.innerHTML = "Latitude: " + position.coords.latitude
 	  + ",<br> and the index is: "+closest; 
 	$scope.nearest=offices[closest]["office_name"];
 }
