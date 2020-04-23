@@ -272,7 +272,7 @@
 				</div>
 				<div class="row">
 					<p id="demo" class="col-12 mb-2"></p>
-					<p class="col-12 mb-2">Your Nearest City is {{nearest.office_name}}</p>
+					<p class="col-12 mb-2">Your Nearest City is {{nearest}}</p>
 					<label>Search contact details of office</label>
 					<input style="height:33px" type="text" name="country" id="country" ng-model="country" ng-keyup="complete(country)" class="form-control" placeholder="Type office name here..."/>
 					<ul class="list-group">
@@ -465,17 +465,7 @@
 			var offices = [];
 			var x = document.getElementById("demo");
 			app.controller('myCtrl',function($scope,$http){
-				$scope.nearest = {
-					"office_name":"Delhi",
-					"office_code":"XXXXX",
-					"office_number":101,
-					"office_address1":"XXX, XXXX",
-					"office_address2":"XXXXX, XXXXXXXX",
-					"office_city":"XXXXXXX",
-					"reporting_office":"XXXX",
-					"office_lat":28.56,
-					"office_long":77.05
-				};
+				$scope.nearest = "Delhi";
 				$scope.office={'title':""}
 				$http({
 						method: 'GET',
@@ -484,8 +474,13 @@
 						//console.log(success);
 						$scope.officeList = success.data;
 						offices = success.data;
-						find_nearest_city();
-						
+						if (navigator.geolocation) {
+							navigator.geolocation.getCurrentPosition(UserLocation);
+						}
+						// Default to Delhi
+						else {
+							NearestCity(28.56, 77.05);
+						}
 					},function (error){
 						console.log(error)
 					});
@@ -508,16 +503,7 @@
 					$scope.filterCountry=null;
 					$scope.office={'title':string}
 				}
-				var find_nearest_city = function() {
-					// HTML5/W3C Geolocation
-					if (navigator.geolocation) {
-						navigator.geolocation.getCurrentPosition(UserLocation);
-					}
-					// Default to Delhi
-					else {
-						NearestCity(28.56, 77.05);
-					}
-				}
+
 
 // Callback function for asynchronous call to HTML5 geolocation
 function UserLocation(position) {
@@ -525,7 +511,7 @@ function UserLocation(position) {
 	x.innerHTML = "Latitude: " + position.coords.latitude +
 	  "<br>Longitude: " + position.coords.longitude 
 	  + ",<br> and the index is: "+closest; 
-	$scope.nearest=offices[closest];
+	$scope.nearest=offices[closest]["office_name"];
 }
 
 // Convert Degress to Radians
