@@ -512,14 +512,15 @@
 					$scope.office={'title':string}
 				}
 				var find_nearest_city = function() {
-	// HTML5/W3C Geolocation
-	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(UserLocation);
-	}
-	// Default to Washington, DC
-	else
-		NearestCity(28.56, 77.05);
-	}
+					// HTML5/W3C Geolocation
+					if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(UserLocation);
+					}
+					// Default to Delhi
+					else {
+						NearestCity(28.56, 77.05);
+					}
+				}
 
 // Callback function for asynchronous call to HTML5 geolocation
 function UserLocation(position) {
