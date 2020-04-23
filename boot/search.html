@@ -271,14 +271,14 @@
 					</div>
 				</div>
 				<div class="row">
-					<label>Enter Office Name</label>
+					<label>Search contact details of office</label>
 					<input style="height:33px" type="text" name="country" id="country" ng-model="country" ng-keyup="complete(country)" class="form-control" placeholder="Type office name here..."/>
 					<ul class="list-group">
 						<li class="list-group-item" ng-repeat="countrydata in filterCountry" ng-click="fillTextbox(countrydata)">{{countrydata}}</li>
 					</ul>
 				</div>
 				<div class="row">				
-					<div class="card col-12 px-0">
+					<div class="card col-12 px-0 my-3">
 						<div class="card-header">Regional Office, {{office.title}}</div>
 						<div class="card-body">
 							<table class="table table-bordered table-sm">
