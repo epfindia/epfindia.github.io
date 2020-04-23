@@ -511,11 +511,7 @@
 					$scope.filterCountry=null;
 					$scope.office={'title':string}
 				}
-			});
-		</script>
-		<script>
-// Get User's Coordinate from their Browser
-var find_nearest_city = function() {
+				var find_nearest_city = function() {
 	// HTML5/W3C Geolocation
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(UserLocation);
@@ -558,6 +554,7 @@ function NearestCity(latitude, longitude) {
 
 	for (index = 0; index < offices.length; ++index) {
 		var dif = PythagorasEquirectangular(latitude, longitude, offices[index]["office_lat"], offices[index]["office_long"]);
+		alert(dif);
 		if (dif < minDif) {
 			closest = index;
 			minDif = dif;
@@ -565,6 +562,9 @@ function NearestCity(latitude, longitude) {
 	}
 	console.log(offices[closest]);  
 }
+
+			});
+// Get User's Coordinate from their Browser
 		</script>
 	</body>
 </html>
