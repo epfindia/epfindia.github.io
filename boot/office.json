@@ -1,0 +1,90 @@
+[
+	{
+		"office_name":"Amritsar",
+		"office_code":"LDASR",
+		"office_number":381,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":31.65,
+		"office_long":74.87
+	},
+	{
+		"office_name":"Delhi",
+		"office_code":"XXXXX",
+		"office_number":101,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":28.56,
+		"office_long":77.05
+	},
+	{
+		"office_name":"Hawrah",
+		"office_code":"XXXXX",
+		"office_number":101,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":22.58,
+		"office_long":88.33
+	},
+	{
+		"office_name":"Kandiwali",
+		"office_code":"XXXXX",
+		"office_number":101,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":28.56,
+		"office_long":77.05
+	},
+	{
+		"office_name":"Pune",
+		"office_code":"XXXXX",
+		"office_number":101,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":18.50,
+		"office_long":73.87
+	},
+	{
+		"office_name":"Hyderabad",
+		"office_code":"XXXXX",
+		"office_number":101,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":17.39,
+		"office_long":78.49
+	},
+	{
+		"office_name":"Bangalore",
+		"office_code":"XXXXX",
+		"office_number":101,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":12.66,
+		"office_long":77.59
+	},
+	{
+		"office_name":"Chennai",
+		"office_code":"XXXXX",
+		"office_number":101,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":13.04,
+		"office_long":80.26
+	}
+]
