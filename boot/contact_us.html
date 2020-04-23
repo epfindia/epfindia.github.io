@@ -546,21 +546,19 @@ function PythagorasEquirectangular(lat1, lon1, lat2, lon2) {
 	return d;
 }
 
-
-
-
 function NearestCity(latitude, longitude) {
 	var minDif = 99999;
 	//var closest;
 
 	for (index = 0; index < offices.length; ++index) {
 		var dif = PythagorasEquirectangular(latitude, longitude, offices[index]["office_lat"], offices[index]["office_long"]);
-		alert(dif);
+		
 		if (dif < minDif) {
 			closest = index;
 			minDif = dif;
 		}
 	}
+	alert(mindif);
 	console.log(offices[closest]);  
 }
 
