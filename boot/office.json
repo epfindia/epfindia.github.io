@@ -35,13 +35,13 @@
 	{
 		"office_name":"Vadodara",
 		"office_code":"XXXXX",
-		"office_number":101,
+		"office_number":182,
 		"office_address1":"XXX, XXXX",
 		"office_address2":"XXXXX, XXXXXXXX",
 		"office_city":"XXXXXXX",
 		"reporting_office":"XXXX",
 		"office_lat":22.29,
-		"office_long":76.16
+		"office_long":73.16
 	},
 	{
 		"office_name":"Kandiwali",
