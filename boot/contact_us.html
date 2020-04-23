@@ -465,7 +465,7 @@
 			var offices = [];
 			var minDif = 9999999999;
 			var x = document.getElementById("demo");
-			closest = 1;
+			closest = 0;
 			app.controller('myCtrl',function($scope,$http){
 				$scope.nearest = {
 					"office_name":"Delhi",
@@ -527,7 +527,9 @@
 function UserLocation(position) {
 	NearestCity(position.coords.latitude, position.coords.longitude);
 	x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude + ",<br> and the diff is"+minDif; 
+  "<br>Longitude: " + position.coords.longitude 
+  + ",<br> and the diff is"+minDif
+  + ",<br> and the index is"+closest; 
 }
 
 // Convert Degress to Radians
