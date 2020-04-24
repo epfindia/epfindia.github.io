@@ -11,7 +11,7 @@
 		"office_long":74.87
 	},
 	{
-		"office_name":"Delhi",
+		"office_name":"Delhi, Dwarka",
 		"office_code":"XXXXX",
 		"office_number":101,
 		"office_address1":"XXX, XXXX",
@@ -20,6 +20,17 @@
 		"reporting_office":"XXXX",
 		"office_lat":28.56,
 		"office_long":77.05
+	},
+	{
+		"office_name":"Delhi, Head Office",
+		"office_code":"XXXXX",
+		"office_number":101,
+		"office_address1":"XXX, XXXX",
+		"office_address2":"XXXXX, XXXXXXXX",
+		"office_city":"XXXXXXX",
+		"reporting_office":"XXXX",
+		"office_lat":28.56,
+		"office_long":77.18
 	},
 	{
 		"office_name":"Hawrah",
