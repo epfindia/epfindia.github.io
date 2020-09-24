@@ -513,12 +513,11 @@ function UserLocation(position) {
 	closest = NearestCity(position.coords.latitude, position.coords.longitude);
 	x.innerHTML = "The index is: "+closest; 
 	$scope.$apply(function () {
-     $scope.nearest=offices[closest]["office_name"];
-	 $scope.office={"title": $scope.nearest};
-});
+		$scope.nearest=offices[closest]["office_name"];
+		$scope.office={"title": $scope.nearest};
+	});
 	
 	y.innerHTML = $scope.nearest;
-	alert($scope.nearest);
 }
 
 // Convert Degress to Radians
