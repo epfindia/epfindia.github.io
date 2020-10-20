@@ -1,6 +1,6 @@
 
 [{
-	"office":"BANDRA – 1",
+	"office":"BANDRA – 1 (Bandra)",
 	"pincodes"  : [
 400016,
 400017,
@@ -15,7 +15,7 @@
 400056,
 400057,
 400098]},{
-	"office":"BANDRA – 2",
+	"office":"BANDRA – 2 (Dadar)",
 	"pincodes"  : [
 400011,
 400012,
@@ -31,7 +31,7 @@
 400031,
 400033,
 400037]},{
-	"office":"BANDRA – 3",
+	"office":"BANDRA – 3 (Nariman Point)",
 	"pincodes"  : [
 400001,
 400002,
@@ -52,7 +52,7 @@
 400036,
 400038,
 400039]},{
-	"office":"BANDRA – 4",
+	"office":"BANDRA – 4 (Powai)",
 	"pincodes"  : [
 110001,
 122001,
