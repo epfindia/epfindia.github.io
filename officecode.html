@@ -26,7 +26,7 @@
 			<table class="table table-condensed table-hover table-bordered table-striped">
 				<thead>
 					<tr>
-						<th class="d-none hidden">id</th>
+						<th style="display:none" class="d-none hidden">id</th>
 						<th class="col-md-4" >Office</th>
 						<th class="col-md-4">Codes</th>
 					</tr>
@@ -34,7 +34,7 @@
 
 				<tbody>
 					<tr ng-repeat="x in offices">
-						<td class="d-none hidden">{{x.id}}</td>
+						<td style="display:none"  class="d-none hidden">{{x.id}}</td>
 						<td>{{x.office}}</td>
 						<td>{{x.code}}</td>
 					</tr>
