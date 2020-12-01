@@ -26,15 +26,15 @@
 			<table class="table table-condensed table-hover table-bordered table-striped">
 				<thead>
 					<tr>
-						<th class="d-none">id</th>
+						<th class="d-none hidden">id</th>
 						<th class="col-md-4" >Office</th>
-						<th class="col-md-8">Codes</th>
+						<th class="col-md-4">Codes</th>
 					</tr>
 				</thead>
 
 				<tbody>
 					<tr ng-repeat="x in offices">
-						<td class="d-none">{{x.id}}</td>
+						<td class="d-none hidden">{{x.id}}</td>
 						<td>{{x.office}}</td>
 						<td>{{x.code}}</td>
 					</tr>
