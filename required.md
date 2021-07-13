@@ -26,5 +26,9 @@
 
 #### Security Incident Management policy
 
+#### Password policy
 
+#### Opensource adoption policy
+
+#### Policy for Changes in Main website of EPFO
 
